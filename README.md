@@ -32,10 +32,10 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - En el fork, codifica el layout siguiendo las instrucciones que están abajo;
 - Actualiza el readme con las instrucciones necesarias para ejecutar tu código;
 - Adiciona también tu e-mail de contacto al readme del proyecto ( en caso que tu e-mail de github sea privado )
-- Haz un pull request (o envíalo a [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
+- Haz un pull request (o envíalo a [juan@m3ecommerce.com](mailto:juan@m3ecommerce.com?subject=Vacane%20DEV%20-%20M3)
 
 
-**obs.**: link del proyecto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
+**obs.**: link del proyecto [github.com/juanfrancom3/desarrollador-m3](https://github.com/juanfrancom3/desarrollador-m3)
 
 ### Instrucciones para la prueba
 
@@ -57,4 +57,4 @@ El layout se encontrá en la carpeta "layout" en PSD y PNG.
 - Javascript sin plugins y modular
 - Grunt, Gulp o similar
 
-##### Dudas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
+##### Dudas: [juan@m3ecommerce.com](mailto:juan@m3ecommerce.com?subject=Consulta%20Vacante%20DEV%20-%20M3)
