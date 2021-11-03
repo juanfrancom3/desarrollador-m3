@@ -1,64 +1,60 @@
-# Venha ser um desenvolvedor da Digital M3
+# Ven a ser un desarrollador M3
 
-Ola, somos a Agência Digital M3, uma agência voltada para ramo de comercio eletrônico, trabalhamos com implantação, migração, evolução e otmização de e-commerces. Estamos com a sede de desenvolvimento em Nova Friburgo RJ e um escritório comercial na cidade de São Paulo.
+Hola somos M3, una agencia especializada en el campo de e-commerce. Trabajamos con despliegue, migración, evolución y optimización de tiendas de comercio electrónico. Nuestra casa matriz está en Brasil, Rio de Janeiro y contamos con oficinas comerciales en São Paulo, Buenos Aires y Bogotá.
 
-Em Nova Friburgo estamos na: 
-> R. Helena Coutinho, 41 
-> Braunes, Nova Friburgo/RJ
-[https://goo.gl/maps/2mWagcctnrGdtFhBA]( https://goo.gl/maps/2mWagcctnrGdtFhBA )
 
-Estamos procurando Desenvolvedores(as) `Front-end`, com sólidos conhecimentos em HTML, CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en HTML, CSS y JS para diseñar interfaces y brindar la mejor experiencia a los clientes, buscando siempre la optimización del código y la agilidad en el desarrollo.
 
-## O que procuramos
+## Qué estamos buscando:
 
-### Requisitos Obrigatórios
+### Requisitos obligatorios:
 
 - Html5, css3;
 - Javascript, jquery;
-- Versionamento Git;
+- Versionamiento Git;
 - Grunt/gulp;
 - Sass/less;
 - Sites responsivos;
-- Iniciativa, criatividade e colaboração;
-- Boas práticas: reutilização de código, semântica, organização, performance.
+- Iniciativa, creatividad y colaboración;
+- Buenas práticas: reutilización de código, semántica, organización, performance.
 
-### Desejáveis:
+### Deseables:
 
-- Experiência com algum CMS
-- Conhecimento/Experiência em Vtex
+- Experiencia con algún CMS
+- Conocimiento/ experiencia en Vtex
 - React
 
 ----
 
-## Como se candidatar a vaga
+## Cómo aplicar a la vacante
 
-- [Crie um fork desse projeto;](https://github.com/agenciam3/Desenvolvedor-M3/fork)
-- No seu fork, codifique o layout seguindo as instruções abaixo;
-- Atualize o readme com as instruções necessárias para rodar o seu código;
-- Adicione também seu e-mail de contato ao readme do projeto ( caso seu e-mail do github esteja privado )
-- Faça um pull request (ou envie para [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
+- [Crea un fork de este proyecto;](https://github.com/agenciam3/Desenvolvedor-M3/fork)
+- En el fork, codifica el layout siguiendo las instrucciones que están abajo;
+- Actualiza el readme con las instrucciones necesarias para ejecutar tu código;
+- Adiciona también tu e-mail de contacto al readme del proyecto ( en caso que tu e-mail de github sea privado )
+- Haz un pull request (o envíalo a [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Vaga%20DEV%20-%20Digital%20M3)
 
 
-**obs.**: link do projeto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
+**obs.**: link del proyecto [github.com/agenciam3/Desenvolvedor-M3](https://github.com/agenciam3/Desenvolvedor-M3)
 
-### Instruções para o teste
+### Instrucciones para la prueba
 
-O layout se encontra na pasta "layout" em PSD e PNG.
+El layout se encontrá en la carpeta "layout" en PSD y PNG.
 
-### Obrigatório
+### Obligatorio
 
-- HTML5 e CSS3
-- Interação com JSON para renderizar os produtos (fique livre para criar o JSON no formato que achar mais adequado)
-- Interação com JSON para filtar os produtos
-- Funcionalidade: Filtrar produtos por cor, tamanho e preço.
-- Funcionalidade: Adicionar produto ao carrinho.
-- Funcionalidade: Carregar mais produtos.
-- Não utilizar Bootstrap, Foundation Css, Semantic ui ou semelhantes ;
-- Responsividade
+- HTML5 y CSS3
+- Interacción con JSON para renderizar los productos (siéntete libre de crear el JSON en el formato que encuentres más adecuado).
+- Interacción con JSON para filtrar los productos.
+- Funcionalidad: Filtrar productos por color, tamaño y precio.
+- Funcionalidad: Adicionar producto al carrito.
+- Funcionalidad: Agregar más productos.
+- No utilizar Bootstrap, Foundation Css, Semantic ui o semejantes ;
+- Responsivo
 
-#### Bônus
+#### Bonus
 
-- Javascript sem plugins e modular
-- Grunt, Gulp ou similar
+- Javascript sin plugins y modular
+- Grunt, Gulp o similar
 
-##### Dúvidas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
+##### Dudas: [heraldo@digitalm3.com.br](mailto:heraldo@digitalm3.com.br?subject=Dúvida%20Vaga%20DEV%20-%20Digital%20M3)
