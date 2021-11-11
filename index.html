@@ -15,6 +15,7 @@
     </header>
     <nav>
       <div>
+          <h1>Blusas</h1>
         <select name="" id="">
           <option value="">Mas recientes</option>
           <option value="">Mayor precio</option>
@@ -91,5 +92,77 @@
           </div>
       </div>
     </nav>
+    <section>
+    <div id="cards" class="row"></div>
+
+    <template id="template-card">
+        <div class="col-12 mob-2 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <img src="" alt="" class="card-img-top">
+                    <h3>Nombre</h5>
+                    <h4>Precio</h3>
+                    <p>Cuotas</p>
+                    <button class="btn-buy">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <div class="container">
+        <h4>Carrito de compras</h4>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Acción</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot>
+            <tr id="footer">
+              <th scope="row" colspan="5">
+                Carrito vacío - comience a comprar!
+              </th>
+            </tr>
+          </tfoot>
+        </table>
+        <h4>Cards</h4>
+        <div class="row" id="cards"></div>
+      </div>
+
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+      <div class="row" id="cards"></div>
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+              <button class="btn btn-info btn-sm">
+                  +
+              </button>
+              <button class="btn btn-danger btn-sm">
+                  -
+              </button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+    </section>
+    
+    <script src="app.js"></script>
   </body>
 </html>
