@@ -4,7 +4,7 @@
     "price": "28,00",
     "toFinance:": "até 3x de R$9,33",
     "image": {
-      "source": "./src/assets/images/img_2.png"
+      "source": "./assets/images/img_2.png"
     }
   },
   {
@@ -12,7 +12,7 @@
     "price": "398,00",
     "toFinance": "até 5X de R$30,00",
     "image": {
-      "source": "./src/assets/images/img_3.png"
+      "source": "./assets/images/img_3.png"
     }
   },
   {
@@ -20,7 +20,7 @@
     "price": "398,00",
     "toFinance": "até 5x de R$30,00",
     "image": {
-      "source": "./src/assets/images/img_4.png"
+      "source": "./assets/images/img_4.png"
     }
   },
   {
@@ -28,7 +28,7 @@
     "price": "99,90",
     "toFinance": "até 3x de R$33,30",
     "image": {
-      "source": "./src/assets/images/img_5.png"
+      "source": "./assets/images/img_5.png"
     }
   },
   {
@@ -36,7 +36,7 @@
     "price": "129,90",
     "toFinance": "até 3x de R$43,43",
     "image": {
-      "source": "./src/assets/images/img_6.png"
+      "source": "./assets/images/img_6.png"
     }
   },
   {
@@ -44,7 +44,7 @@
     "price": "398,00",
     "toFinance": "até 5x de R$30,00",
     "image": {
-      "source": "./src/assets/images/img_7.png"
+      "source": "./assets/images/img_7.png"
     }
   },
   {
@@ -52,7 +52,7 @@
     "price": "120.00",
     "toFinance": "até 3x de R$40,00",
     "image": {
-      "source": "./src/assets/images/img_8.png"
+      "source": "./assets/images/img_8.png"
     }
   },
   {
@@ -60,7 +60,7 @@
     "price": "398.00",
     "toFinance": "até 5x de R$30,00",
     "image": {
-      "source": "./src/assets/images/img_9.png"
+      "source": "./assets/images/img_9.png"
     }
   },
   {
@@ -68,7 +68,7 @@
     "price": "99.00",
     "toFinance": "até 3x de R$33,00",
     "image": {
-      "source": "./src/assets/images/img_10.png"
+      "source": "./assets/images/img_10.png"
     }
   }
 ]
