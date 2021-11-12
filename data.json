@@ -1,0 +1,74 @@
+[
+  {
+    "name": "camiseta mescla",
+    "price": "28,00",
+    "toFinance:": "até 3x de R$9,33",
+    "image": {
+      "source": "./src/assets/images/img_2.png"
+    }
+  },
+  {
+    "name": "saia em couro",
+    "price": "398,00",
+    "toFinance": "até 5X de R$30,00",
+    "image": {
+      "source": "./src/assets/images/img_3.png"
+    }
+  },
+  {
+    "name": "cardigan tigre",
+    "price": "398,00",
+    "toFinance": "até 5x de R$30,00",
+    "image": {
+      "source": "./src/assets/images/img_4.png"
+    }
+  },
+  {
+    "name": "cardigan off white",
+    "price": "99,90",
+    "toFinance": "até 3x de R$33,30",
+    "image": {
+      "source": "./src/assets/images/img_5.png"
+    }
+  },
+  {
+    "name": "body leopardo",
+    "price": "129,90",
+    "toFinance": "até 3x de R$43,43",
+    "image": {
+      "source": "./src/assets/images/img_6.png"
+    }
+  },
+  {
+    "name": "casaco pelos",
+    "price": "398,00",
+    "toFinance": "até 5x de R$30,00",
+    "image": {
+      "source": "./src/assets/images/img_7.png"
+    }
+  },
+  {
+    "name": "cropped stripes",
+    "price": "120.00",
+    "toFinance": "até 3x de R$40,00",
+    "image": {
+      "source": "./src/assets/images/img_8.png"
+    }
+  },
+  {
+    "name": "camisa transparente",
+    "price": "398.00",
+    "toFinance": "até 5x de R$30,00",
+    "image": {
+      "source": "./src/assets/images/img_9.png"
+    }
+  },
+  {
+    "name": "pochete clutch",
+    "price": "99.00",
+    "toFinance": "até 3x de R$33,00",
+    "image": {
+      "source": "./src/assets/images/img_10.png"
+    }
+  }
+]
