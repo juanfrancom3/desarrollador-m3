@@ -14,7 +14,7 @@ module.exports = {
   devtool: "source-map",
   watch: true,
   resolve: {
-    extensions: [".js"],
+    extensions: [".js", ".mjs"],
   },
   module: {
     rules: [
@@ -54,8 +54,16 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
+          from: path.resolve(__dirname, "src", "assets/images/"),
+          to: "assets/images",
+        },
+        {
           from: path.resolve(__dirname, "src", "assets/icons/"),
           to: "assets/icons",
+        },
+        {
+          from: path.resolve(__dirname, "src", "data/"),
+          to: "./",
         },
       ],
     }),
@@ -69,6 +77,7 @@ module.exports = {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
+    historyApiFallback: true,
     port: 9000,
   },
 };

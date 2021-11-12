@@ -13,7 +13,7 @@ module.exports = {
     filename: "build.js",
   },
   resolve: {
-    extensions: [".js"],
+    extensions: [".js", ".mjs"],
   },
   module: {
     rules: [

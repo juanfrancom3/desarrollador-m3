@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem 0 2rem;
+  border-bottom: 1px solid $options-color;
+  .logo {
+    width: 183px;
+    height: 48px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .shopping-bag {
+    width: 30;
+    height: 34;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .items-in-bag {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: -20px;
+      background-color: $Primary-blue;
+      color: $White;
+      border-radius: 50%;
+    }
+  }
+}
