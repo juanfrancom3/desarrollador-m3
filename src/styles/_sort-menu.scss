@@ -1,0 +1,18 @@
+.sort-menu {
+  @include menu-box-mobile;
+  &_header {
+    @include header;
+  }
+  .options-list {
+    width: 100%;
+    height: 30rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_item {
+      list-style: none;
+      font-size: 2.6rem;
+    }
+  }
+}

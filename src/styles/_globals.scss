@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $Font;
 }
 html {
   font-size: 62.5%;
 }
 .container {
-  width: 100vw;
+  position: relative;
+  width: 100%;
 }

@@ -1,0 +1,61 @@
+.filter-menu {
+  @include menu-box-mobile;
+  left: 0;
+  &_header {
+    @include header;
+  }
+  details {
+    width: 100%;
+    padding: 3rem 3rem 2rem;
+    summary {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 300;
+      list-style: none;
+      p {
+        @include uppercase-title;
+        color: $black;
+      }
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem;
+      span {
+        display: flex;
+        position: relative;
+        margin: 1.5rem 0;
+        align-items: center;
+        font-size: 2.6rem;
+        [type="checkbox"] {
+          display: none;
+        }
+        label {
+          position: relative;
+          text-transform: capitalize;
+          padding-left: 5rem;
+          &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: 0.2rem;
+            // background-color: transparent;
+            border: 1px solid $options-color;
+          }
+        }
+        [type="checkbox"]:checked + label::before {
+          border-color: $Primary-blue;
+          background-color: $Primary-blue;
+        }
+      }
+    }
+  }
+}
