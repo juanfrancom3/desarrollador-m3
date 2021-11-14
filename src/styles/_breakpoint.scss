@@ -1,0 +1,7 @@
+@media (max-width: 320px) {
+  main {
+    .products {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,8 +1,12 @@
-const getData = async () => {
-  const route = "./data.json";
-  const response = await fetch(route);
-  const data = response.json();
-  return data;
-};
+export async function getData() {
+  //Obtener los datos del json
+  try {
+    const url = "./data.json";
+    const response = await fetch(url);
+    const data = await response.json();
 
-export default getData;
+    return data.results;
+  } catch (error) {
+    console.log(`ERROR ${error}`);
+  }
+}

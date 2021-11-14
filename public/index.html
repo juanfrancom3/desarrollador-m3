@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -36,34 +36,17 @@
         </div>
 
         <div class="main-options">
-          <div class="main-options_option">
+          <div class="main-options_option" id="btn_filter-menu">
             <p>Filtrar</p>
           </div>
-          <div class="main-options_option">
+          <div class="main-options_option" id="btn_sort-menu">
             <p>ordenar</p>
           </div>
         </div>
 
-        <section class="products">
-          <div class="product">
-            <img src="./assets/images/img_2.png" alt="" />
-            <div class="product_info">
-              <p class="name">Camisea mescla</p>
-              <p class="price">R$ 28,00</p>
-              <p class="toFinance">até 3x de R$9,33</p>
-            </div>
-            <button type="button">Comprar</button>
-          </div>
+        <section class="products" id="products"></section>
 
-          <div class="product">
-            <img src="./assets/images/img_3.png" alt="product image" />
-          </div>
-          <div class="product">
-            <img src="./assets/images/img_3.png" alt="product image" />
-          </div>
-        </section>
-
-        <button class="moreProducts">carregar mais</button>
+        <button class="btn_moreProducts" id="btn_more">carregar mais</button>
       </main>
 
       <div class="sort-menu">
@@ -74,10 +57,14 @@
       </div>
 
       <!-- FILTER MENU MOBILE -->
-      <div class="filter-menu">
+      <div class="filter-menu" id="filter-menu">
         <div class="filter-menu_header">
           <p>filtrar</p>
-          <img src="./assets/icons/close.png" alt="close icon" />
+          <img
+            src="./assets/icons/close.png"
+            alt="close icon"
+            id="close_filter-menu"
+          />
         </div>
 
         <details>
@@ -108,37 +95,41 @@
             </span>
 
             <span>
-              <input type="checkbox" name="" id="gray" value="cinza" />
+              <input type="checkbox" name="" id="gray" value="gray" />
               <label for="gray">Cinza</label>
             </span>
 
             <span>
-              <input type="checkbox" name="" id="orange" value="laranja" />
+              <input type="checkbox" name="" id="orange" value="orange" />
               <label for="orange">Laranja</label>
             </span>
 
             <span>
-              <input type="checkbox" name="" id="green" value="verde" />
+              <input type="checkbox" name="" id="green" value="green" />
               <label for="green">Verde</label>
             </span>
 
             <span>
-              <input type="checkbox" name="" id="red" value="vermelho" />
+              <input type="checkbox" name="" id="red" value="red" />
               <label for="red">Vermelho</label>
             </span>
 
             <span>
-              <input type="checkbox" name="" id="black" value="preto" />
+              <input type="checkbox" name="" id="black" value="black" />
               <label for="black">Preto</label>
             </span>
 
             <span>
-              <input type="checkbox" name="" id="pink" value="rosa" />
+              <input type="checkbox" name="" id="pink" value="pink" />
               <label for="pink">Rosa</label>
             </span>
             <span>
-              <input type="checkbox" name="" id="wine" value="vinho" />
+              <input type="checkbox" name="" id="wine" value="wine" />
               <label for="wine">Vinho</label>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="brown" value="brown" />
+              <label for="brown">Marrom</label>
             </span>
           </div>
         </details>
@@ -252,10 +243,14 @@
       <!-- FILTER MENU MOBILE END -->
 
       <!-- SORT MENU MOBILE-->
-      <div class="sort-menu">
+      <div class="sort-menu" id="sort-menu">
         <div class="sort-menu_header">
           <p>ordenar</p>
-          <img src="./assets/icons/close.png" alt="close icon" />
+          <img
+            src="./assets/icons/close.png"
+            alt="close icon"
+            id="close_sort-menu"
+          />
         </div>
 
         <ul class="options-list">
