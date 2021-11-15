@@ -23,3 +23,25 @@ export async function mostRecent() {
 
   return orderedProducts;
 }
+
+export async function lowerPrice() {
+  const products = await getData();
+  let orderedProducts = [];
+
+  products.forEach((item) => {
+    orderedProducts.push(item);
+  });
+
+  orderedProducts.sort(function (a, b) {
+    if (parseInt(a.price) > parseInt(b.price)) {
+      return 1;
+    }
+    if (parseInt(a.price) < parseInt(b.price)) {
+      return -1;
+    }
+
+    return 0;
+  });
+  // console.log(orderedProducts);
+  return orderedProducts;
+}

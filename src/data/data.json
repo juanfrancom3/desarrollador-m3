@@ -80,7 +80,7 @@
     },
     {
       "name": "cropped stripes",
-      "price": "120.00",
+      "price": "120,00",
       "color": "red",
       "toFinance": "até 3x de R$40,00",
       "image": {
@@ -93,7 +93,7 @@
     },
     {
       "name": "camisa transparente",
-      "price": "398.00",
+      "price": "398,00",
       "color": "black",
       "toFinance": "até 5x de R$30,00",
       "image": {
@@ -106,7 +106,7 @@
     },
     {
       "name": "pochete clutch",
-      "price": "99.00",
+      "price": "99,00",
       "color": "white",
       "toFinance": "até 3x de R$33,00",
       "image": {

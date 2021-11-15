@@ -5,9 +5,26 @@ import { renderTemplate } from "./modules/Template.mjs";
 import { fadeIn } from "./modules/move_menu";
 import { fadeOut } from "./modules/move_menu.mjs";
 import { mostRecent } from "./modules/order.mjs";
+import { lowerPrice } from "./modules/order.mjs";
 
 const productsSection = document.getElementById("products");
 
+function render(ordered) {
+  productsSection.innerHTML = "";
+
+  ordered.forEach((item) => {
+    const template = Template(
+      item.image.source,
+      item.name,
+      item.price,
+      item.toFinance
+    );
+
+    renderTemplate(productsSection, template);
+  });
+
+  sendMenu("sort-menu", false);
+}
 async function getInfo(firstView) {
   const allProducts = await getData();
   let counter = 0;
@@ -78,20 +95,16 @@ document
 
     console.log(ordered);
 
-    productsSection.innerHTML = "";
+    render(ordered);
+  });
 
-    ordered.forEach((item) => {
-      const template = Template(
-        item.image.source,
-        item.name,
-        item.price,
-        item.toFinance
-      );
+//BTN lower-price
+document
+  .getElementById("btn_lower-price")
+  .addEventListener("click", async () => {
+    const ordered = await lowerPrice();
 
-      renderTemplate(productsSection, template);
-    });
-
-    sendMenu("sort-menu", false);
+    render(ordered);
   });
 
 getInfo(true);
