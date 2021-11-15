@@ -31,6 +31,8 @@ export const Template = (route, name, price, toFinance) => {
   }
 };
 
+function render(params) {}
+
 export function renderTemplate(container, template) {
   // container.innerHTML = "";
   container.innerHTML += template;

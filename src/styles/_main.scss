@@ -70,6 +70,13 @@ main {
         p:last-child {
           margin: 0;
         }
+        p:last-child,
+        .name {
+          min-height: 52px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
       button {
         width: 100%;

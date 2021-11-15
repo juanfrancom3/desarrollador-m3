@@ -4,6 +4,7 @@ import { Template } from "./modules/Template.mjs";
 import { renderTemplate } from "./modules/Template.mjs";
 import { fadeIn } from "./modules/move_menu";
 import { fadeOut } from "./modules/move_menu.mjs";
+import { mostRecent } from "./modules/order.mjs";
 
 const productsSection = document.getElementById("products");
 
@@ -48,11 +49,10 @@ document.getElementById("btn_more").addEventListener("click", () => {
 //btn filtrar
 document.getElementById("btn_filter-menu").addEventListener("click", () => {
   const id = "filter-menu";
-  console.log(id);
   sendMenu(id, true);
 });
 
-//btn_ordenar
+//btn_Ordenar
 document.getElementById("btn_sort-menu").addEventListener("click", () => {
   const id = "sort-menu";
   sendMenu(id, true);
@@ -69,4 +69,29 @@ document.getElementById("close_sort-menu").addEventListener("click", () => {
   const id = "sort-menu";
   sendMenu(id, false);
 });
+
+//BTN Mas reciente
+document
+  .getElementById("btn_most-recent")
+  .addEventListener("click", async () => {
+    const ordered = await mostRecent();
+
+    console.log(ordered);
+
+    productsSection.innerHTML = "";
+
+    ordered.forEach((item) => {
+      const template = Template(
+        item.image.source,
+        item.name,
+        item.price,
+        item.toFinance
+      );
+
+      renderTemplate(productsSection, template);
+    });
+
+    sendMenu("sort-menu", false);
+  });
+
 getInfo(true);

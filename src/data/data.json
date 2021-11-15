@@ -8,7 +8,10 @@
       "image": {
         "source": "./assets/images/img_2.png"
       },
-      "sizes": ["P", "M", "GG"]
+      "sizes": ["P", "M", "GG"],
+      "publication": {
+        "date": "2020-11-21"
+      }
     },
     {
       "name": "saia em couro",
@@ -18,7 +21,10 @@
       "image": {
         "source": "./assets/images/img_3.png"
       },
-      "sizes": ["M", "GG"]
+      "sizes": ["M", "GG"],
+      "publication": {
+        "date": "2021-11-21"
+      }
     },
     {
       "name": "cardigan tigre",
@@ -28,7 +34,10 @@
       "image": {
         "source": "./assets/images/img_4.png"
       },
-      "sizes": ["GG", "G"]
+      "sizes": ["GG", "G"],
+      "publication": {
+        "date": "2020-08-21"
+      }
     },
     {
       "name": "cardigan off white",
@@ -38,7 +47,10 @@
       "image": {
         "source": "./assets/images/img_5.png"
       },
-      "sizes": ["M", "G"]
+      "sizes": ["M", "G"],
+      "publication": {
+        "date": "2021-03-18"
+      }
     },
     {
       "name": "body leopardo",
@@ -48,7 +60,10 @@
       "image": {
         "source": "./assets/images/img_6.png"
       },
-      "sizes": ["P", "G"]
+      "sizes": ["P", "G"],
+      "publication": {
+        "date": "2020-12-23"
+      }
     },
     {
       "name": "casaco pelos",
@@ -58,7 +73,10 @@
       "image": {
         "source": "./assets/images/img_7.png"
       },
-      "sizes": ["P", "M", "G"]
+      "sizes": ["P", "M", "G"],
+      "publication": {
+        "date": "2020-05-05"
+      }
     },
     {
       "name": "cropped stripes",
@@ -68,7 +86,10 @@
       "image": {
         "source": "./assets/images/img_8.png"
       },
-      "sizes": ["P", "M"]
+      "sizes": ["P", "M"],
+      "publication": {
+        "date": "2021-02-02"
+      }
     },
     {
       "name": "camisa transparente",
@@ -78,7 +99,10 @@
       "image": {
         "source": "./assets/images/img_9.png"
       },
-      "sizes": ["M", "GG"]
+      "sizes": ["M", "GG"],
+      "publication": {
+        "date": "2020-10-27"
+      }
     },
     {
       "name": "pochete clutch",
@@ -88,7 +112,10 @@
       "image": {
         "source": "./assets/images/img_10.png"
       },
-      "sizes": ["GG"]
+      "sizes": ["GG"],
+      "publication": {
+        "date": "2020-09-11"
+      }
     }
   ]
 }
