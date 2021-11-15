@@ -45,3 +45,26 @@ export async function lowerPrice() {
   // console.log(orderedProducts);
   return orderedProducts;
 }
+
+export async function higherPrice() {
+  const products = await getData();
+  let orderedProducts = [];
+
+  products.forEach((item) => {
+    orderedProducts.push(item);
+  });
+
+  orderedProducts.sort(function (a, b) {
+    if (parseInt(a.price) > parseInt(b.price)) {
+      return 1;
+    }
+    if (parseInt(a.price) < parseInt(b.price)) {
+      return -1;
+    }
+
+    return 0;
+  });
+
+  orderedProducts.reverse();
+  return orderedProducts;
+}

@@ -6,6 +6,7 @@ import { fadeIn } from "./modules/move_menu";
 import { fadeOut } from "./modules/move_menu.mjs";
 import { mostRecent } from "./modules/order.mjs";
 import { lowerPrice } from "./modules/order.mjs";
+import { higherPrice } from "./modules/order.mjs";
 
 const productsSection = document.getElementById("products");
 
@@ -93,7 +94,7 @@ document
   .addEventListener("click", async () => {
     const ordered = await mostRecent();
 
-    console.log(ordered);
+    // console.log(ordered);
 
     render(ordered);
   });
@@ -103,6 +104,15 @@ document
   .getElementById("btn_lower-price")
   .addEventListener("click", async () => {
     const ordered = await lowerPrice();
+
+    render(ordered);
+  });
+
+//BTN higher price
+document
+  .getElementById("btn_higher-price")
+  .addEventListener("click", async () => {
+    const ordered = await higherPrice();
 
     render(ordered);
   });
