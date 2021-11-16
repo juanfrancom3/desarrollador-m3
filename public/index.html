@@ -19,13 +19,47 @@
   </head>
   <body>
     <div class="container">
+      <div class="shopping-bag--container hidde" id="shopping-bag--container">
+        <div class="shopping-bag-box">
+          <div class="shopping-bag--product">
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="shopping-bag--product--product-info">
+              <p class="product-name">Camiseta mescla</p>
+              <p class="product-price">R$ 45,00s</p>
+
+              <div class="cantidad">1</div>
+            </div>
+          </div>
+          <div class="shopping-bag--product">
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <div class="shopping-bag--product--product-info">
+              <p class="product-name">Camiseta mescla</p>
+              <p class="product-price">R$ 45,00s</p>
+
+              <div class="cantidad">1</div>
+            </div>
+          </div>
+          <div class="shopping-bag--buttons">
+            <button class="pay-button">Pagar</button>
+          </div>
+        </div>
+      </div>
+
       <header class="header">
         <figure class="logo">
           <img src="./assets/icons/logo-m3.png" alt="m3 company logo" />
         </figure>
 
         <div class="shopping-bag">
-          <img src="./assets/icons/bag.png" alt="shopping bag image" />
+          <img
+            src="./assets/icons/bag.png"
+            alt="shopping bag image"
+            id="shopping-bag-icon"
+          />
           <div class="items-in-bag">3</div>
         </div>
       </header>
@@ -236,7 +270,9 @@
         </details>
 
         <div class="buttons">
-          <button class="button button_blue">Aplicar</button>
+          <button class="button button_blue" id="btn_apply-filter">
+            Aplicar
+          </button>
           <button class="button">limpiar</button>
         </div>
       </div>

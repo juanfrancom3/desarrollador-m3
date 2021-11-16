@@ -37,7 +37,6 @@
   position: absolute;
   width: 100%;
   min-height: 100%;
-  // height: 90px;
   border-bottom: 1px solid $options-color;
   top: 0;
   left: -100%;
@@ -70,7 +69,6 @@
         position: absolute;
         left: 0;
         top: 0.2rem;
-        // background-color: transparent;
         border: 1px outset $options-color;
         transition: all 0.1s ease-in-out;
       }
@@ -92,4 +90,16 @@
       display: block;
     }
   }
+}
+
+@mixin amount() {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $title-color;
+  color: $White;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
 }

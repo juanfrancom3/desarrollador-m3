@@ -112,7 +112,7 @@
       "image": {
         "source": "./assets/images/img_10.png"
       },
-      "sizes": ["GG"],
+      "sizes": ["GG", "P"],
       "publication": {
         "date": "2020-09-11"
       }

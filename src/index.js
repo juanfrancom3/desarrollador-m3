@@ -7,46 +7,49 @@ import { fadeOut } from "./modules/move_menu.mjs";
 import { mostRecent } from "./modules/order.mjs";
 import { lowerPrice } from "./modules/order.mjs";
 import { higherPrice } from "./modules/order.mjs";
+import { getValues } from "./modules/filter.mjs";
 
-const productsSection = document.getElementById("products");
-
-function render(ordered) {
-  productsSection.innerHTML = "";
-
-  ordered.forEach((item) => {
-    const template = Template(
-      item.image.source,
-      item.name,
-      item.price,
-      item.toFinance
-    );
-
-    renderTemplate(productsSection, template);
+async function render(templates) {
+  const productsSection = document.getElementById("products");
+  const products = await templates;
+  products.forEach((product) => {
+    product.renderTemplate(productsSection);
   });
-
-  sendMenu("sort-menu", false);
 }
-async function getInfo(firstView) {
-  const allProducts = await getData();
-  let counter = 0;
+
+function hasChild(parent) {
+  if (parent.hasChildNodes()) {
+    const children = parent.childNodes;
+    return children;
+  } else {
+    return false;
+  }
+}
+
+function createProduct(allProducts) {
+  let allTemplates = [];
 
   allProducts.forEach((product) => {
-    const template = Template(
+    //Crear el objeto
+    const template = new Template(
       product.image.source,
       product.name,
       product.price,
-      product.toFinance
+      product.toFinance,
+      product.publication.date,
+      product.sizes
     );
-    if (screen.width < 1024 && firstView == true) {
-      if (counter < 6) {
-        //cantidad inicial de productos que se muestran en pantallas mobile
-        renderTemplate(productsSection, template);
-      }
-    } else {
-      renderTemplate(productsSection, template);
-    }
-    counter++;
+    allTemplates.push(template);
   });
+  console.log(allTemplates);
+  return allTemplates;
+}
+
+async function getInfo() {
+  const allProducts = await getData();
+  const allTemplates = createProduct(allProducts);
+  // console.log(products);
+  return allTemplates;
 }
 
 function sendMenu(id, state) {
@@ -58,10 +61,13 @@ function sendMenu(id, state) {
   }
 }
 
+// ================================================== //
+// =                    BOTONES                     = //
+// ================================================== //
 //BTN_Cargar mas productos
 document.getElementById("btn_more").addEventListener("click", () => {
   productsSection.innerHTML = "";
-  getInfo(false);
+  getInfo();
 });
 
 //btn filtrar
@@ -91,13 +97,7 @@ document.getElementById("close_sort-menu").addEventListener("click", () => {
 //BTN Mas reciente
 document
   .getElementById("btn_most-recent")
-  .addEventListener("click", async () => {
-    const ordered = await mostRecent();
-
-    // console.log(ordered);
-
-    render(ordered);
-  });
+  .addEventListener("click", async () => {});
 
 //BTN lower-price
 document
@@ -105,7 +105,7 @@ document
   .addEventListener("click", async () => {
     const ordered = await lowerPrice();
 
-    render(ordered);
+    // render();
   });
 
 //BTN higher price
@@ -114,7 +114,28 @@ document
   .addEventListener("click", async () => {
     const ordered = await higherPrice();
 
-    render(ordered);
+    // render();
   });
 
-getInfo(true);
+document.getElementById("btn_apply-filter").addEventListener("click", () => {
+  let filterOptions = document.querySelectorAll(
+    "details input[type='checkbox']"
+  );
+  getValues(filterOptions);
+});
+
+const shopping_bag_icon = document.getElementById("shopping-bag-icon");
+
+shopping_bag_icon.addEventListener("click", () => {
+  const bag = document.getElementById("shopping-bag--container");
+  // console.log(bag);
+  if (bag.classList.contains("hidde")) {
+    bag.style.visibility = "visible";
+    bag.classList.remove("hidde");
+  } else {
+    bag.style.visibility = "hidden";
+    bag.classList.add("hidde");
+  }
+});
+
+render(getInfo());
