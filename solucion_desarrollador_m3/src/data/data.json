@@ -3,40 +3,66 @@
   "data":[
 
     {
+      "id": 1,
       "source": "./src/layout/imagens/img_2.png",
-      "price": 28.00
+      "price": 28.00,
+      "cant":10
     },
     {
+      "id": 2,
       "source": "./src/layout/imagens/img_3.png",
-      "price": 398.00
+      "price": 398.00,
+      "cant":10
+
     },
     {
+      "id": 3,
       "source": "./src/layout/imagens/img_4.png",
-      "price": 398.00
+      "price": 398.00,
+      "cant":10
+
     },
     {
+      "id": 4,
       "source": "./src/layout/imagens/img_5.png",
-      "price": 99.00
+      "price": 99.00,
+      "cant":10
+
     },
     {
+      "id": 5,
       "source": "./src/layout/imagens/img_6.png",
-      "price": 129.00
+      "price": 129.00,
+      "cant":10
+
     },
     {
+      "id": 6,
       "source": "./src/layout/imagens/img_7.png",
-      "price": 398.00
+      "price": 398.00,
+      "cant":10
+
     },
     {
+      "id": 7,
       "source": "./src/layout/imagens/img_8.png",
-      "price": 120.00
+      "price": 120.00,
+      "cant":10
+
     },
     {
+      "id": 8,
       "source": "./src/layout/imagens/img_9.png",
-      "price": 398.00
+      "price": 398.00,
+      "cant":2
+
     },
     {
+      "id": 9,
       "source": "./src/layout/imagens/img_10.png",
-      "price": 99.00
+      "price": 99.00,
+      "cant":0
+
     }
   ]
 }
