@@ -1,0 +1,42 @@
+{
+
+  "data":[
+
+    {
+      "source": "./src/layout/imagens/img_2.png",
+      "price": 28.00
+    },
+    {
+      "source": "./src/layout/imagens/img_3.png",
+      "price": 398.00
+    },
+    {
+      "source": "./src/layout/imagens/img_4.png",
+      "price": 398.00
+    },
+    {
+      "source": "./src/layout/imagens/img_5.png",
+      "price": 99.00
+    },
+    {
+      "source": "./src/layout/imagens/img_6.png",
+      "price": 129.00
+    },
+    {
+      "source": "./src/layout/imagens/img_7.png",
+      "price": 398.00
+    },
+    {
+      "source": "./src/layout/imagens/img_8.png",
+      "price": 120.00
+    },
+    {
+      "source": "./src/layout/imagens/img_9.png",
+      "price": 398.00
+    },
+    {
+      "source": "./src/layout/imagens/img_10.png",
+      "price": 99.00
+    }
+  ]
+}
