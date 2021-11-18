@@ -4,51 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.scss" />
     <title>M3 e-commerce</title>
   </head>
   <body>
     <header>
-      <div>
-        <img src="/layout/imagens/logo-m3.png" alt="M3 e-commerce" />
-        <img src="/layout/imagens/bolso.png" alt="Carrito" width="2%" />
+      <img src="/layout/imagens/logo-m3.png" alt="M3 e-commerce" />
+      <div class="carrito">
+        <a href="#"
+          ><img src="/layout/imagens/bolso.png" alt="Carrito de compras"
+        /></a>
       </div>
     </header>
     <nav>
-      <div>
-          <h1>Blusas</h1>
-        <select name="" id="">
+      <div class="ordenar">
+        <h1>Blusas</h1>
+        <select name="" id="orden">
           <option value="">Mas recientes</option>
           <option value="">Mayor precio</option>
           <option value="">Menor precio</option>
           <br />
         </select>
       </div>
-      <div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label for="">Amarillo</label>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label for="">Azul</label>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label for="">Blanco</label>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label for="">Gris</label>
-        </div>
-        <div>
-          <input type="checkbox" name="" id="" />
-          <label for="">Naranja</label>
-        </div>
-        <a href="#">Ver todos los colores</a>
-      </div>
-      <div>
-          <h3>TAMAÑOS</h3>
+    </nav>
+    <section class="columnas">
+      <section>
+        <div class="precio-tamaño-col">
+          <div class="color">
+            <h4>COLORES</h4>
+            <div class="marca">
+              <input type="checkbox" name="" id="" />
+              <label for="">Amarillo</label>
+            </div>
+            <div class="marca">
+              <input type="checkbox" name="" id="" />
+              <label for="">Azul</label>
+            </div>
+            <div class="marca">
+              <input type="checkbox" name="" id="" />
+              <label for="">Blanco</label>
+            </div>
+            <div class="marca">
+              <input type="checkbox" name="" id="" />
+              <label for="">Gris</label>
+            </div>
+            <div class="marca">
+              <input type="checkbox" name="" id="" />
+              <label for="">Naranja</label>
+            </div>
+            <a href="#">Ver todos los colores</a>
+          </div>
           <div>
+            <h3>TAMAÑOS</h3>
+            <div class="tamaño">
               <div>
                 <button>S</button>
                 <button>M</button>
@@ -56,60 +65,63 @@
                 <button>XL</button>
               </div>
               <div>
-              <button>XXL</button>
-              <button>36</button>
-              <button>38</button>
-              <button>40</button>
+                <button>XXL</button>
+                <button>36</button>
+                <button>38</button>
+                <button>40</button>
               </div>
               <div>
                 <button>42</button>
                 <button>44</button>
                 <button>46</button>
-              </div> 
-          </div>
-          <div>
+              </div>
+            </div>
+            <div class="precio">
               <h3>Precio</h3>
-              <div>
+              <div class="marca-precio">
                 <input type="checkbox" name="" id="" />
                 <label for="">de $0 a $36.000</label>
               </div>
-              <div>
+              <div class="marca-precio">
                 <input type="checkbox" name="" id="" />
                 <label for="">de $36.001 a $108.000</label>
               </div>
-              <div>
+              <div class="marca-precio">
                 <input type="checkbox" name="" id="" />
                 <label for="">de $108.001 a $216.000</label>
               </div>
-              <div>
+              <div class="marca-precio">
                 <input type="checkbox" name="" id="" />
                 <label for="">de $216.001 a $360.000</label>
               </div>
-              <div>
+              <div class="marca-precio">
                 <input type="checkbox" name="" id="" />
                 <label for="">a partir de $1000</label>
               </div>
-          </div>
-      </div>
-    </nav>
-    <section>
-    <div id="cards" class="row"></div>
-
-    <template id="template-card">
-        <div class="col-12 mob-2 col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <img src="" alt="" class="card-img-top">
-                    <h3>Nombre</h5>
-                    <h4>Precio</h3>
-                    <p>Cuotas</p>
-                    <button class="btn-buy">COMPRAR</button>
-                </div>
             </div>
+          </div>
         </div>
-    </template>
+      </section>
+      <div id="cards" class="grid"></div>
 
-    <div class="container">
+      <template id="template-card">
+        <div class="col-12 mob-2 col-md-4">
+          <div class="container">
+            <div class="card">
+              <img src="" alt="" class="card-img-top" />
+              <h3 class="titulo">Nombre</h3>
+              <h4>Precio</h4>
+              COP
+              <p>Cuotas</p>
+              <button class="btn-buy">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </section>
+
+    <section>
+      <div class="">
         <h4>Carrito de compras</h4>
         <table class="table">
           <thead>
@@ -151,18 +163,17 @@
           <td>Café</td>
           <td>1</td>
           <td>
-              <button class="btn btn-info btn-sm">
-                  +
-              </button>
-              <button class="btn btn-danger btn-sm">
-                  -
-              </button>
+            <button class="btn btn-info btn-sm">+</button>
+            <button class="btn btn-danger btn-sm">-</button>
           </td>
           <td>$ <span>500</span></td>
         </tr>
       </template>
     </section>
-    
+    <footer class="cargar">
+      <button type="button" class="carregar">CARGAR MAS</button>
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

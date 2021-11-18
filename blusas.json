@@ -3,7 +3,7 @@
     "id": "1",
     "imagen": "/layout/imagens/img_2.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -12,7 +12,7 @@
     "id": "2",
     "imagen": "/layout/imagens/img_3.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -21,7 +21,7 @@
     "id": "3",
     "imagen": "/layout/imagens/img_4.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -30,7 +30,7 @@
     "id": "4",
     "imagen": "/layout/imagens/img_5.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -39,7 +39,7 @@
     "id": "5",
     "imagen": "/layout/imagens/img_6.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -48,7 +48,7 @@
     "id": "6",
     "imagen": "/layout/imagens/img_7.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -57,7 +57,7 @@
     "id": "7",
     "imagen": "/layout/imagens/img_8.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -66,7 +66,7 @@
     "id": "8",
     "imagen": "/layout/imagens/img_9.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 
@@ -75,7 +75,7 @@
     "id": "9",
     "imagen": "/layout/imagens/img_10.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "$20.100",
+    "precio": "20100",
     "cuotas": "3x",
     "color": "gris"
 

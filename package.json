@@ -1,0 +1,22 @@
+{
+  "name": "desarrollador-m3",
+  "version": "1.0.0",
+  "description": "Hola somos M3, una agencia especializada en el campo de e-commerce. Trabajamos con despliegue, migración, evolución y optimización de tiendas de comercio electrónico. Nuestra casa matriz está en Brasil, Rio de Janeiro y contamos con oficinas comerciales en São Paulo, Buenos Aires y Bogotá.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejandro9912/desarrollador-m3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alejandro9912/desarrollador-m3/issues"
+  },
+  "homepage": "https://github.com/Alejandro9912/desarrollador-m3#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  }
+}
