@@ -1,7 +1,17 @@
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   main {
     .products {
       grid-template-columns: 1fr;
+    }
+  }
+  .filter-menu {
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      .button {
+        width: 100%;
+        height: 6rem;
+      }
     }
   }
 }

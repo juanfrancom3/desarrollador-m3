@@ -8,7 +8,7 @@
       "image": {
         "source": "./assets/images/img_2.png"
       },
-      "sizes": ["P", "M", "GG"],
+      "sizes": ["p", "m", "gg"],
       "publication": {
         "date": "2020-11-21"
       }
@@ -21,7 +21,7 @@
       "image": {
         "source": "./assets/images/img_3.png"
       },
-      "sizes": ["M", "GG"],
+      "sizes": ["m", "gg"],
       "publication": {
         "date": "2021-11-21"
       }
@@ -34,7 +34,7 @@
       "image": {
         "source": "./assets/images/img_4.png"
       },
-      "sizes": ["GG", "G"],
+      "sizes": ["gg", "g"],
       "publication": {
         "date": "2020-08-21"
       }
@@ -47,7 +47,7 @@
       "image": {
         "source": "./assets/images/img_5.png"
       },
-      "sizes": ["M", "G"],
+      "sizes": ["m", "g"],
       "publication": {
         "date": "2021-03-18"
       }
@@ -60,7 +60,7 @@
       "image": {
         "source": "./assets/images/img_6.png"
       },
-      "sizes": ["P", "G"],
+      "sizes": ["p", "g"],
       "publication": {
         "date": "2020-12-23"
       }
@@ -73,7 +73,7 @@
       "image": {
         "source": "./assets/images/img_7.png"
       },
-      "sizes": ["P", "M", "G"],
+      "sizes": ["p", "m", "g"],
       "publication": {
         "date": "2020-05-05"
       }
@@ -86,7 +86,7 @@
       "image": {
         "source": "./assets/images/img_8.png"
       },
-      "sizes": ["P", "M"],
+      "sizes": ["p", "m"],
       "publication": {
         "date": "2021-02-02"
       }
@@ -99,7 +99,7 @@
       "image": {
         "source": "./assets/images/img_9.png"
       },
-      "sizes": ["M", "GG"],
+      "sizes": ["m", "gg"],
       "publication": {
         "date": "2020-10-27"
       }
@@ -112,7 +112,7 @@
       "image": {
         "source": "./assets/images/img_10.png"
       },
-      "sizes": ["GG", "P"],
+      "sizes": ["gg", "p"],
       "publication": {
         "date": "2020-09-11"
       }

@@ -20,32 +20,12 @@
   <body>
     <div class="container">
       <div class="shopping-bag--container hidde" id="shopping-bag--container">
-        <div class="shopping-bag-box">
-          <div class="shopping-bag--product">
-            <figure>
-              <img src="" alt="" />
-            </figure>
-            <div class="shopping-bag--product--product-info">
-              <p class="product-name">Camiseta mescla</p>
-              <p class="product-price">R$ 45,00s</p>
-
-              <div class="cantidad">1</div>
-            </div>
-          </div>
-          <div class="shopping-bag--product">
-            <figure>
-              <img src="" alt="" />
-            </figure>
-            <div class="shopping-bag--product--product-info">
-              <p class="product-name">Camiseta mescla</p>
-              <p class="product-price">R$ 45,00s</p>
-
-              <div class="cantidad">1</div>
-            </div>
-          </div>
-          <div class="shopping-bag--buttons">
-            <button class="pay-button">Pagar</button>
-          </div>
+        <div class="empty" id="shopping-bag-empty">
+          <p>Sem Produtos</p>
+        </div>
+        <div class="shopping-bag-box" id="shopping-bag-box"></div>
+        <div class="shopping-bag--buttons">
+          <div class="pay-button">Pagar</div>
         </div>
       </div>
 
@@ -60,7 +40,7 @@
             alt="shopping bag image"
             id="shopping-bag-icon"
           />
-          <div class="items-in-bag">3</div>
+          <div class="items-in-bag" id="items_in_bag">3</div>
         </div>
       </header>
 
@@ -101,7 +81,7 @@
           />
         </div>
 
-        <details>
+        <details id="filter_colors">
           <summary>
             <p>Cores</p>
             <img src="./assets/icons/plus.png" alt="minus icon" />
@@ -168,49 +148,49 @@
           </div>
         </details>
 
-        <details>
+        <details id="filter_sizes">
           <summary>
             <p>Tamanhos</p>
             <img src="./assets/icons/plus.png" alt="minus icon" />
           </summary>
 
           <div class="sizes-filter">
-            <input type="checkbox" name="" id="p" />
+            <input type="checkbox" name="" id="p" value="p" />
             <label for="p">P</label>
 
-            <input type="checkbox" name="" id="m" />
+            <input type="checkbox" name="" id="m" value="m" />
             <label for="m">M</label>
 
-            <input type="checkbox" name="" id="g" />
+            <input type="checkbox" name="" id="g" value="g" />
             <label for="g">G</label>
 
-            <input type="checkbox" name="" id="gg" />
+            <input type="checkbox" name="" id="gg" value="gg" />
             <label for="gg">GG</label>
 
-            <input type="checkbox" name="" id="u" />
+            <input type="checkbox" name="" id="u" value="u" />
             <label for="u">U</label>
 
-            <input type="checkbox" name="" id="36" />
+            <input type="checkbox" name="" id="36" value="36" />
             <label for="36">36</label>
 
-            <input type="checkbox" name="" id="38" />
+            <input type="checkbox" name="" id="38" value="38" />
             <label for="38">38</label>
 
-            <input type="checkbox" name="" id="40" />
+            <input type="checkbox" name="" id="40" value="40" />
             <label for="40">40</label>
 
-            <input type="checkbox" name="" id="42" />
+            <input type="checkbox" name="" id="42" value="42" />
             <label for="42">42</label>
 
-            <input type="checkbox" name="" id="44" />
+            <input type="checkbox" name="" id="44" value="44" />
             <label for="44">44</label>
 
-            <input type="checkbox" name="" id="46" />
+            <input type="checkbox" name="" id="46" value="46" />
             <label for="46">46</label>
           </div>
         </details>
 
-        <details class="">
+        <details class="" id="filter_price">
           <summary>
             <p>faixa de preço</p>
             <img src="./assets/icons/plus.png" alt="minus icon" />
@@ -222,7 +202,7 @@
                 type="checkbox"
                 name=""
                 id="price-filter_option1"
-                value=""
+                value="0"
               />
               <label for="price-filter_option1">de R$ 0 até R$ 50</label>
             </span>
@@ -232,7 +212,7 @@
                 type="checkbox"
                 name=""
                 id="price-filter_option2"
-                value=""
+                value="50"
               />
               <label for="price-filter_option2">de R$ 51 até R$ 150</label>
             </span>
@@ -242,7 +222,7 @@
                 type="checkbox"
                 name=""
                 id="price-filter_option3"
-                value=""
+                value="150"
               />
               <label for="price-filter_option3">de R$ 151 até 300</label>
             </span>
@@ -252,7 +232,7 @@
                 type="checkbox"
                 name=""
                 id="price-filter_option4"
-                value=""
+                value="300"
               />
               <label for="price-filter_option4">de R$ 301 até 500</label>
             </span>
@@ -262,14 +242,14 @@
                 type="checkbox"
                 name=""
                 id="price-filter_option5"
-                value=""
+                value="500"
               />
               <label for="price-filter_option5">a partir de R$ 501</label>
             </span>
           </div>
         </details>
 
-        <div class="buttons">
+        <div class="buttons" id="filter-buttons">
           <button class="button button_blue" id="btn_apply-filter">
             Aplicar
           </button>
