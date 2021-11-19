@@ -1,3 +1,4 @@
+import BotonComprar from '../BotonComprar'
 import './tarjeta.css'
 export default function Tarjeta ({ src, price, title, ...props }) {
   console.log(props)
@@ -7,7 +8,7 @@ export default function Tarjeta ({ src, price, title, ...props }) {
       <img src={src} alt={title} />
       <p>{title}</p>
       <p><strong>{price}</strong></p>
-      <button>{label}</button>
+      <BotonComprar>{label}</BotonComprar>
     </div>
   )
 }

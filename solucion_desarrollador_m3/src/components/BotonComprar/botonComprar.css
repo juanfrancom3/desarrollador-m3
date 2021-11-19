@@ -1,0 +1,10 @@
+.boton-comprar{
+  background-color: var(--colorBtnPrimary);
+  color: var(--colorTextSecondary);
+  border: none;
+  cursor: pointer;
+}
+.boton-comprar:hover{
+  background-color: var(--colorBtnPrimaryHover);
+  transform: scale(1.01,1.01);
+}

@@ -4,6 +4,10 @@
 }
 :root{
   --colorText: black;
+  --colorTextSecondary: white;
+  --colorBtnPrimary: black;
+  --colorBtnPrimaryHover:rgb(32, 32, 32);
+  --colorBlue: #2bbff2;
 }
 
 .App-logo {

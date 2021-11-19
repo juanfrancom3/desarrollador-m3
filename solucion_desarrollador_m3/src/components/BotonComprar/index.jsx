@@ -1,6 +1,6 @@
-
+import './botonComprar.css'
 export default function BotonComprar ({ children }) {
   return (
-    <button>{children}</button>
+    <button className='boton-comprar'>{children}</button>
   )
 }
