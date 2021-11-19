@@ -1,6 +1,10 @@
 import './botonComprar.css'
-export default function BotonComprar ({ children }) {
+export default function BotonComprar ({ active, agregar, children }) {
+  console.log(children)
   return (
-    <button className='boton-comprar'>{children}</button>
+    active
+      ? <button onClick={agregar} className='boton-comprar'>{children}</button>
+      : <button onClick={agregar} className='boton-comprar btn-disabled' disabled>{children}</button>
+
   )
 }
