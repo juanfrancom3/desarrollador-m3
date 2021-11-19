@@ -3,27 +3,34 @@ import { useState } from 'react'
 import './App.css'
 import BolsaCompra from './components/BolsaCompra'
 import ListaTarjetas from './components/ListaTarjetas'
+import Titulo from './components/Titulo'
 // import Tarjeta from './components/Tarjeta'
 // const a = import('./data/data.json')
 import * as response from './data/data.json'
 function App () {
-  const [compr, setcompr] = useState('')
-  // console.log(response)
-  // console.log(response.data)
-  // console.log(response.default.data)
-  // a.then(data => console.log(data.default))
-  // console.log(data)
+  const [compra, setCompra] = useState('')
+  // const [a, setA] = useState({})
 
+  const agregar = (id) => {
+    console.log('todo', id)
+
+    // console.log(a)
+    setCompra(e => +e + 1)
+  }
   return (
     <div className='App'>
-      <header className='App-header'>
+      <header className='App-header container'>
         <div className='header'>
           <img src='./src/layout/imagens/logo-m3.png' alt='logo' />
-          <BolsaCompra compras={compr} />
+          <BolsaCompra compras={compra} />
         </div>
-        <button onClick={() => setcompr(e => +e + 1)}>press me</button>
       </header>
-      <ListaTarjetas data={response.data} />
+      <hr />
+      <div className='container main'>
+        <Titulo>Blusas</Titulo>
+        <p>ordenar</p>
+      </div>
+      <ListaTarjetas data={response.data} agregar={agregar} />
     </div>
   )
 }

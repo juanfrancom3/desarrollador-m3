@@ -3,8 +3,16 @@
   color: var(--colorTextSecondary);
   border: none;
   cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  /* height: 10px; */
 }
 .boton-comprar:hover{
   background-color: var(--colorBtnPrimaryHover);
   transform: scale(1.01,1.01);
+}
+.btn-disabled{
+  background-color: var(--colorBtnPrimaryDisabled);
+  cursor: no-drop;
 }

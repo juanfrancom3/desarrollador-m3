@@ -7,6 +7,7 @@
   --colorTextSecondary: white;
   --colorBtnPrimary: black;
   --colorBtnPrimaryHover:rgb(32, 32, 32);
+  --colorBtnPrimaryDisabled: rgb(53, 53, 53);
   --colorBlue: #2bbff2;
 }
 
@@ -22,16 +23,13 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
-  /* min-height: 100vh; */
-  /* display: flex; */
-  width: 90%;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 .header{
   display: flex;
@@ -40,6 +38,15 @@
 
 .App-link {
   color: #61dafb;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @keyframes App-logo-spin {

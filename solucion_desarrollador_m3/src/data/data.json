@@ -6,62 +6,80 @@
       "id": 1,
       "source": "./src/layout/imagens/img_2.png",
       "price": 28.00,
-      "cant":10
+      "cant":10,
+      "title": "CAMISETA MESCLA",
+      "colors": ["cinza"]
     },
     {
       "id": 2,
       "source": "./src/layout/imagens/img_3.png",
       "price": 398.00,
-      "cant":10
+      "cant":10,
+      "title": "SAIA EM COURO",
+      "colors": ["amarelo", "laranja"]
 
     },
     {
       "id": 3,
       "source": "./src/layout/imagens/img_4.png",
       "price": 398.00,
-      "cant":10
+      "cant":10,
+      "title": "CARDIGAN TIGRE",
+      "colors": ["laranja"]
 
     },
     {
       "id": 4,
       "source": "./src/layout/imagens/img_5.png",
       "price": 99.00,
-      "cant":10
+      "cant":10,
+      "title": "CARDIGAN OFF WHITE",
+      "colors": ["branco"]
 
     },
     {
       "id": 5,
       "source": "./src/layout/imagens/img_6.png",
       "price": 129.00,
-      "cant":10
+      "cant":10,
+      "title": "BODY LEOPARDO",
+      "colors": ["amarelo", "laranja"]
 
     },
     {
       "id": 6,
       "source": "./src/layout/imagens/img_7.png",
       "price": 398.00,
-      "cant":10
+      "cant":10,
+      "title": "CASACO PELOS",
+      "colors": ["rosado"]
 
     },
     {
       "id": 7,
       "source": "./src/layout/imagens/img_8.png",
       "price": 120.00,
-      "cant":10
+      "cant":10,
+      "title": "CROPPED STRIPES",
+      "colors": ["amarelo", "azul", "laranja"]
 
     },
     {
       "id": 8,
       "source": "./src/layout/imagens/img_9.png",
       "price": 398.00,
-      "cant":2
+      "cant":2,
+      "title": "CAMISA TRANSPARENTE",
+      "colors": ["preto", "transparente"]
 
     },
     {
       "id": 9,
       "source": "./src/layout/imagens/img_10.png",
       "price": 99.00,
-      "cant":0
+      "cant":0,
+      "title": "POCHETE CLUTCH",
+      "colors": ["branco"]
 
     }
   ]
