@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Comerce</title>
+    <!-- iconos de font asome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- fuentes de google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./img/logo-m3.png" alt="Logo m3" />
+      </div>
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-shopping-bag"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div><h1>Blusas</h1></div>
+
+      <!-- filter select -->
+
+      <div class="filter-select">
+        <span class="btnMenu" id="btnMenu">Filtrar</span>
+      </div>
+
+      <!-- end filter select -->
+
+      <select name="select">
+        <option value="" selected disabled hidden>Ordenar por:</option>
+        <option value="">Mas reciente</option>
+        <option value="value1">Menor precio</option>
+        <option value="value2">Mayor precio</option>
+      </select>
+    </header>
+
+    <main class="content">
+      <aside class="sidebar">
+        <form action="">
+          <legend>CORES</legend>
+          <div class="color-input">
+            <div class="checradio">
+              <input
+                id="checkbox1"
+                type="radio"
+                name="radio"
+                value="amarelo"
+                class="radiobtn"
+              />
+              <label for="checkbox1">Amarelo</label>
+            </div>
+            <div class="checradio">
+              <input
+                id="checkbox2"
+                type="radio"
+                name="radio"
+                value="azul"
+                class="radiobtn"
+              />
+              <label for="checkbox2">Azul</label>
+            </div>
+
+            <div class="checradio">
+              <input
+                id="checkbox3"
+                type="radio"
+                name="radio"
+                value="branco"
+                class="radiobtn"
+              />
+              <label for="checkbox3">Branco</label>
+            </div>
+            <div class="checradio">
+              <input
+                id="checkbox4"
+                type="radio"
+                name="radio"
+                value="cinza"
+                class="radiobtn"
+              />
+              <label for="checkbox4">Cinza</label>
+            </div>
+            <div class="checradio">
+              <input
+                id="checkbox5"
+                type="radio"
+                name="radio"
+                value="laranja"
+                class="radiobtn"
+              />
+              <label for="checkbox5">Laranja</label>
+            </div>
+          </div>
+
+          <div class="cloth-size">
+            <p>TAMANHOS</p>
+            <div class="nested-grid">
+              <div><input type="button" value="P" /></div>
+              <div><input type="button" value="M" /></div>
+              <div><input type="button" value="G" /></div>
+              <div><input type="button" value="GG" /></div>
+              <div><input type="button" value="U" /></div>
+              <div><input type="button" value="36" /></div>
+              <div><input type="button" value="38" /></div>
+              <div><input type="button" value="40" /></div>
+              <div><input type="button" value="42" /></div>
+              <div><input type="button" value="44" /></div>
+              <div><input type="button" value="46" /></div>
+            </div>
+          </div>
+
+          <div class="price">
+            <legend>FAIXA DE PREÇO</legend>
+            <div class="checradio">
+              <input
+                id="checkbox6"
+                type="radio"
+                name="radio1"
+                value="0,50"
+                class="radiobtn"
+              />
+              <label for="checkbox6">de R$0 até R$50</label>
+            </div>
+
+            <div class="checradio">
+              <input
+                id="checkbox7"
+                type="radio"
+                name="radio1"
+                value="51,150"
+                class="radiobtn"
+              />
+              <label for="checkbox7">de R$51 até R$150</label>
+            </div>
+
+            <div class="checradio">
+              <input
+                id="checkbox8"
+                type="radio"
+                name="radio1"
+                value="151,300"
+                class="radiobtn"
+              />
+              <label for="checkbox8">de R$151 até R$300</label>
+            </div>
+
+            <div class="checradio">
+              <input
+                id="checkbox9"
+                type="radio"
+                name="radio1"
+                value="301,500"
+                class="radiobtn"
+              />
+              <label for="checkbox9">de R$301 até R$500</label>
+            </div>
+
+            <div class="checradio">
+              <input
+                id="checkbox10"
+                type="radio"
+                name="radio1"
+                value="0,1000"
+                class="radiobtn"
+              />
+              <label for="checkbox10">a partir de R$ 01</label>
+            </div>
+          </div>
+        </form>
+      </aside>
+
+      <section class="products"></section>
+    </main>
+
+    <!-- cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-cart">
+          <i class="fas fa-window-close"></i>
+        </span>
+        <h2>Tu carrito</h2>
+        <div class="cart-content">
+          <!-- cart item -->
+
+          <!-- end cart item -->
+        </div>
+        <div class="cart-footer">
+          <h3>Tu Compra : R$ <span class="cart-total">0</span></h3>
+          <button class="clear-cart btn">LIMPIAR CARRITO</button>
+        </div>
+      </div>
+    </div>
+    <!-- end cart -->
+
+    <!-- responsive filter menu  -->
+
+    <nav class="res-nav">
+      <ul class="menu" id="menu">
+        <li class="menu-item container-submenu">
+          <div class="tilefilter">
+            <h3>Filtrar</h3>
+            <i class="fas fa-window-close" id="btnCloseMenu"></i>
+          </div>
+          <div class="row">
+            <h4 class="submenu-btn">CORES</h4>
+            <i class="fas fa-solid fa-plus" id="subColors"></i>
+          </div>
+
+          <ul class="submenuColor">
+            <li class="menu-item">
+              <div class="color-input">
+                <div class="checradio">
+                  <input
+                    id="checkbox1"
+                    type="radio"
+                    name="radio"
+                    value="amarelo"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox1">Amarelo</label>
+                </div>
+                <div class="checradio">
+                  <input
+                    id="checkbox2"
+                    type="radio"
+                    name="radio"
+                    value="azul"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox2">Azul</label>
+                </div>
+
+                <div class="checradio">
+                  <input
+                    id="checkbox3"
+                    type="radio"
+                    name="radio"
+                    value="branco"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox3">Branco</label>
+                </div>
+                <div class="checradio">
+                  <input
+                    id="checkbox4"
+                    type="radio"
+                    name="radio"
+                    value="cinza"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox4">Cinza</label>
+                </div>
+                <div class="checradio">
+                  <input
+                    id="checkbox5"
+                    type="radio"
+                    name="radio"
+                    value="laranja"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox5">Laranja</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item container-submenu">
+          <div class="row">
+            <h4 class="submenu-btn">TAMANHOS</h4>
+            <i class="fas fa-solid fa-plus" id="subZise"></i>
+          </div>
+          <ul class="submenuZise">
+            <li class="menu-item">
+              <div class="cloth-size">
+                <div class="nested-grid">
+                  <div><input type="button" value="P" /></div>
+                  <div><input type="button" value="M" /></div>
+                  <div><input type="button" value="G" /></div>
+                  <div><input type="button" value="GG" /></div>
+                  <div><input type="button" value="U" /></div>
+                  <div><input type="button" value="36" /></div>
+                  <div><input type="button" value="38" /></div>
+                  <div><input type="button" value="40" /></div>
+                  <div><input type="button" value="42" /></div>
+                  <div><input type="button" value="44" /></div>
+                  <div><input type="button" value="46" /></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item container-submenu">
+          <div class="row">
+            <h4 class="submenu-btn">FAIXA DE PREÇO</h4>
+            <i class="fas fa-solid fa-plus" id="subPrice"></i>
+          </div>
+          <ul class="submenuPrice">
+            <li class="menu-item">
+              <div class="price">
+                <div class="checradio">
+                  <input
+                    id="checkbox6"
+                    type="radio"
+                    name="radio1"
+                    value="0,50"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox6">de R$0 até R$50</label>
+                </div>
+
+                <div class="checradio">
+                  <input
+                    id="checkbox7"
+                    type="radio"
+                    name="radio1"
+                    value="51,150"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox7">de R$51 até R$150</label>
+                </div>
+
+                <div class="checradio">
+                  <input
+                    id="checkbox8"
+                    type="radio"
+                    name="radio1"
+                    value="151,300"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox8">de R$151 até R$300</label>
+                </div>
+
+                <div class="checradio">
+                  <input
+                    id="checkbox9"
+                    type="radio"
+                    name="radio1"
+                    value="301,500"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox9">de R$301 até R$500</label>
+                </div>
+
+                <div class="checradio">
+                  <input
+                    id="checkbox10"
+                    type="radio"
+                    name="radio1"
+                    value="0,1000"
+                    class="radiobtn"
+                  />
+                  <label for="checkbox10">a partir de R$ 01</label>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- end responsive filter menu -->
+
+    <footer class="footer">
+      <h4>Agência M3- Agência de Performance Digital</h4>
+    </footer>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

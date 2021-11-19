@@ -1,0 +1,150 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "camiseta mescla",
+        "promotion": [
+          {
+            "amount": 3,
+            "priceProm": 9.33
+          }
+        ],
+        "price": 28.0,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_2.png" } } },
+        "color": "cinza",
+        "zise": "m"
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "saia em couro",
+        "promotion": [
+          {
+            "amount": 5,
+            "priceProm": 30.0
+          }
+        ],
+        "price": 398.0,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_3.png" } } },
+        "color": "amarelo",
+        "zise": "g"
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "cardigan tigre",
+        "promotion": [
+          {
+            "amount": 5,
+            "priceProm": 30.0
+          }
+        ],
+        "price": 398.0,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_4.png" } } },
+        "color": "laranja",
+        "zise": "gg"
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "cardigan off white",
+        "promotion": [
+          {
+            "amount": 3,
+            "priceProm": 33.9
+          }
+        ],
+        "price": 33.3,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_5.png" } } },
+        "color": "branco",
+        "zise": "u"
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "body leopardo",
+        "promotion": [
+          {
+            "amount": 3,
+            "priceProm": 43.43
+          }
+        ],
+        "price": 129.9,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_6.png" } } },
+        "color": "laranja",
+        "zise": "u"
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "casaco pelos",
+        "promotion": [
+          {
+            "amount": 5,
+            "priceProm": 30.0
+          }
+        ],
+        "price": 398,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_7.png" } } },
+        "color": "laranja",
+        "zise": "40"
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "cropped stripes",
+        "promotion": [
+          {
+            "amount": 3,
+            "priceProm": 40.0
+          }
+        ],
+        "price": 120,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_8.png" } } },
+        "color": "azul",
+        "zise": "m"
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "camisa transparente",
+        "promotion": [
+          {
+            "amount": 5,
+            "priceProm": 30.0
+          }
+        ],
+        "price": 398.0,
+        "image": { "fields": { "file": { "url": "./img/imagens/img_9.png" } } },
+        "color": "cinza",
+        "zise": "g"
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "pochete clutch",
+        "promotion": [
+          {
+            "amount": 3,
+            "priceProm": 33.0
+          }
+        ],
+        "price": 99.0,
+        "image": {
+          "fields": { "file": { "url": "./img/imagens/img_10.png" } }
+        },
+        "color": "branco",
+        "zise": "p"
+      }
+    }
+  ]
+}
