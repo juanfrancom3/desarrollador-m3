@@ -1,4 +1,5 @@
 import Tarjeta from '../Tarjeta'
+import './listaTarjetas.css'
 
 export default function ListaTarjetas ({ data }) {
   return (
