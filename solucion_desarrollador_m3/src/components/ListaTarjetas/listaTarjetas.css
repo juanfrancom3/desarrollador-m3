@@ -2,8 +2,16 @@
 
   display: grid;
   /* grid-template-columns: repeat(3,1fr); */
-  grid-template-columns: repeat(3,1fr);
-  /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)) */
-
-
+  /* grid-template-columns: repeat(3,1fr); */
+  grid-template-columns: repeat(auto-fit,minmax(195px,195px));
+  gap: 1.5rem;
+  justify-content: space-between;
+  
+  
+  
+}
+@media (max-width: 650px){ 
+  .tarjetas{
+    justify-content: center;
+  }
 }
