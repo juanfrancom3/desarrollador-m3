@@ -92,7 +92,7 @@
   }
 }
 
-@mixin amount() {
+@mixin amount {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -103,3 +103,6 @@
   font-size: 1.4rem;
   font-weight: bold;
 }
+
+@mixin menuFiltro {
+} ;

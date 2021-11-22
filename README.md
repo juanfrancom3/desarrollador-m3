@@ -2,7 +2,6 @@
 
 Hola somos M3, una agencia especializada en el campo de e-commerce. Trabajamos con despliegue, migración, evolución y optimización de tiendas de comercio electrónico. Nuestra casa matriz está en Brasil, Rio de Janeiro y contamos con oficinas comerciales en São Paulo, Buenos Aires y Bogotá.
 
-
 Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en HTML, CSS y JS para diseñar interfaces y brindar la mejor experiencia a los clientes, buscando siempre la optimización del código y la agilidad en el desarrollo.
 
 ## Qué estamos buscando:
@@ -24,7 +23,7 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - Conocimiento/ experiencia en Vtex
 - React
 
-----
+---
 
 ## Cómo aplicar a la vacante
 
@@ -33,7 +32,6 @@ Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en H
 - Actualiza el readme con las instrucciones necesarias para ejecutar tu código;
 - Adiciona también tu e-mail de contacto al readme del proyecto ( en caso que tu e-mail de github sea privado )
 - Haz un pull request (o envíalo a [juan@m3ecommerce.com](mailto:juan@m3ecommerce.com?subject=Vacante%20DEV%20-%20M3)
-
 
 **obs.**: link del proyecto [github.com/juanfrancom3/desarrollador-m3](https://github.com/juanfrancom3/desarrollador-m3)
 

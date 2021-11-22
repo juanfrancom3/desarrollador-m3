@@ -64,7 +64,7 @@ export async function getFilterValues(
         }
       }
     }
-    filteredProducts = [...new Set(filteredProducts)]; // eliminar elementos repetidos  del array
+    filteredProducts = [...new Set(filteredProducts)]; // eliminar elementos repetidos  del array de productos ya filtrados.
   });
 
   console.log("ELEMENTOS FILTRADOS: ", filteredProducts);

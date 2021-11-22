@@ -15,3 +15,153 @@
     }
   }
 }
+
+// ================================================== //
+//                     DESKTOP                        //
+// ================================================== //
+
+@media (min-width: 1024px) {
+  .shopping-bag--container {
+    z-index: 1000;
+    .empty {
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .shopping-bag--buttons {
+      height: 3rem;
+      .pay-button {
+        height: auto;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .filter-menu {
+    display: none;
+  }
+  .sort-menu {
+    display: none;
+  }
+  .header-box {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid $options-color;
+  }
+  //      HEADER
+  .container {
+    max-width: 870px;
+    margin: auto;
+  }
+  .header {
+    height: 6rem;
+    border: none;
+    padding: 0;
+    .logo {
+      width: 119px;
+      height: 30px;
+    }
+    .shopping-bag {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      .items-in-bag {
+        width: 2.5rem;
+        height: 2.5rem;
+        right: -1.4rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  //      MAIN
+  main {
+    padding: 4.3rem 0;
+    position: relative;
+    .main-title {
+      margin-bottom: 3.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      h2 {
+        text-align: start;
+        font-size: 3.2rem;
+      }
+      select {
+        display: block;
+        padding: 0.5rem;
+        outline: none;
+        color: $options-color;
+        border: 1px solid $options-color;
+        cursor: pointer;
+        option {
+          color: $title-color;
+          cursor: pointer;
+          &:hover {
+            background-color: $Primary-blue;
+          }
+          &:first-child {
+            color: $options-color;
+          }
+        }
+      }
+    }
+    .main-options {
+      display: none;
+    }
+    .main-container {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 195px 645px;
+    }
+    .products {
+      max-width: 645px;
+      gap: 3rem;
+      grid-template-columns: repeat(3, 1fr);
+      .product {
+        .product_info {
+          margin-bottom: 1.5rem;
+          p {
+            margin: 1rem 0;
+            &:last-child {
+              font-size: 1.4rem;
+              min-height: 0;
+            }
+          }
+          .name {
+            min-height: 0;
+            font-size: 1.4rem;
+            margin-top: 1.2rem;
+          }
+          .price {
+            font-size: 1.6rem;
+            margin-bottom: 0;
+          }
+        }
+        button {
+          height: 4.5rem;
+          font-size: 1.4rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .btn_moreProducts {
+      width: 155px;
+      height: 4.5rem;
+      margin-left: 44rem;
+      font-size: 1.4rem;
+    }
+    .filter-menu_desktop {
+      display: inline-block;
+    }
+  }
+  footer {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

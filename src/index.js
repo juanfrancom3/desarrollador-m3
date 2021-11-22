@@ -126,6 +126,27 @@ shopping_bag_icon.addEventListener("click", () => {
   }
 });
 
+// BTN Ver mas colores ------ DESKTOP
+document.getElementById("moreColors").addEventListener("click", function () {
+  const colorsBox = document.getElementById("colors-section--filter-desktop");
+
+  const btn = document.querySelector("#moreColors p");
+  const btnImage = document.querySelector("#moreColors img");
+
+  console.log(btnImage);
+
+  if (colorsBox.classList.contains("big")) {
+    colorsBox.style.transition = "all .5s ease-in-out";
+    colorsBox.style.height = "160px";
+    colorsBox.classList.remove("big");
+  } else {
+    colorsBox.style.height = "auto";
+    colorsBox.classList.add("big");
+    btn.textContent = "Menos Cores";
+    btnImage.style.transform = "rotate(180deg)";
+  }
+});
+
 //   =========================================   //
 //     Programacion del formulario de filtro     //
 //   =========================================
@@ -163,7 +184,7 @@ document
       selectedSizes,
       selectedPrices
     );
-    // const productSection = document.getElementById("products");
+
     const menu = document.getElementById("filter-menu");
     window.scrollTo(0, 0); //subir la vista de la pagina a la parte superior
     fadeOut(menu); //Cerrar menu de filtro

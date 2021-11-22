@@ -10,6 +10,9 @@ main {
       color: $title-color;
       font-size: $Font-size-title;
     }
+    select {
+      display: none;
+    }
   }
   .main-options {
     width: 100%;

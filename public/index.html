@@ -18,6 +18,8 @@
     <title>M3 Shop</title>
   </head>
   <body>
+    <div class="header-box"></div>
+
     <div class="container">
       <div class="shopping-bag--container hidde" id="shopping-bag--container">
         <div class="empty" id="shopping-bag-empty">
@@ -47,8 +49,19 @@
       <main>
         <div class="main-title">
           <h2>Blusas</h2>
-        </div>
 
+          <!-- SORT MENU DESKTOP -->
+          <div class="sort-menu--desktop">
+            <select name="order" id="">
+              <option value="" selected disabled>Ordenar por:</option>
+              <option value="">Mais recentes</option>
+              <option value="">Menor preço</option>
+              <option value="">Maior preço</option>
+            </select>
+          </div>
+          <!-- FIN SORT MENU DESKTOP -->
+        </div>
+        <!-- OPCIONES DE NAVEGACION EN EL MENU EN VISTA MOBILE -->
         <div class="main-options">
           <div class="main-options_option" id="btn_filter-menu">
             <p>Filtrar</p>
@@ -57,18 +70,190 @@
             <p>ordenar</p>
           </div>
         </div>
+        <div class="main-container">
+          <!-- FILTER MENU DESKTOP -->
+          <div class="filter-menu_desktop">
+            <div
+              class="filter-menu_desktop--section"
+              id="colors-section--filter-desktop"
+            >
+              <p>Cores</p>
+              <div class="colors-filter">
+                <span>
+                  <input
+                    type="checkbox"
+                    name="amarelo"
+                    id="yellow-d"
+                    value="yellow"
+                  />
+                  <label for="yellow-d">Amarelo</label>
+                </span>
 
-        <section class="products" id="products"></section>
+                <span>
+                  <input type="checkbox" name="azul" id="blue-d" value="blue" />
+                  <label for="blue-d">Azul</label>
+                </span>
 
+                <span>
+                  <input
+                    type="checkbox"
+                    name="branco"
+                    id="white-d"
+                    value="white"
+                  />
+                  <label for="white-d">Branco</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="gray-d" value="gray" />
+                  <label for="gray-d">Cinza</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="orange-d" value="orange" />
+                  <label for="orange-d">Laranja</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="green-d" value="green" />
+                  <label for="green-d">Verde</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="red-d" value="red" />
+                  <label for="red-d">Vermelho</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="black-d" value="black" />
+                  <label for="black-d">Preto</label>
+                </span>
+
+                <span>
+                  <input type="checkbox" name="" id="pink-d" value="pink" />
+                  <label for="pink-d">Rosa</label>
+                </span>
+                <span>
+                  <input type="checkbox" name="" id="wine-d" value="wine" />
+                  <label for="wine-d">Vinho</label>
+                </span>
+                <span>
+                  <input type="checkbox" name="" id="brown-d" value="brown" />
+                  <label for="brown-d">Marrom</label>
+                </span>
+              </div>
+            </div>
+            <div class="moreColors" id="moreColors">
+              <p>ver todas as cores</p>
+              <img src="./assets/icons/down.png" alt="drop down" />
+            </div>
+            <div class="filter-menu_desktop--section">
+              <p>Tamanhos</p>
+              <div class="sizes-filter">
+                <input type="checkbox" name="" id="p-desktop" value="p" />
+                <label for="p-desktop">P</label>
+
+                <input type="checkbox" name="" id="m-desktop" value="m" />
+                <label for="m-desktop">M</label>
+
+                <input type="checkbox" name="" id="g-desktop" value="g" />
+                <label for="g-desktop">G</label>
+
+                <input type="checkbox" name="" id="gg-desktop" value="gg" />
+                <label for="gg-desktop">GG</label>
+
+                <input type="checkbox" name="" id="u-desktop" value="u" />
+                <label for="u-desktop">U</label>
+
+                <input type="checkbox" name="" id="36-desktop" value="36" />
+                <label for="36-desktop">36</label>
+
+                <input type="checkbox" name="" id="38-desktop" value="38" />
+                <label for="38-desktop">38</label>
+
+                <input type="checkbox" name="" id="40-desktop" value="40" />
+                <label for="40-desktop">40</label>
+
+                <input type="checkbox" name="" id="42-desktop" value="42" />
+                <label for="42-desktop">42</label>
+
+                <input type="checkbox" name="" id="44-desktop" value="44" />
+                <label for="44-desktop">44</label>
+
+                <input type="checkbox" name="" id="46-desktop" value="46" />
+                <label for="46-desktop">46</label>
+              </div>
+            </div>
+            <div class="filter-menu_desktop--section">
+              <p>faixa de preço</p>
+              <div class="price-filter">
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="price-filter_option1-desktop"
+                    value="0"
+                  />
+                  <label for="price-filter_option1-desktop"
+                    >de R$ 0 até R$ 50</label
+                  >
+                </span>
+
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="price-filter_option2-desktop"
+                    value="50"
+                  />
+                  <label for="price-filter_option2-desktop"
+                    >de R$ 51 até R$ 150</label
+                  >
+                </span>
+
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="price-filter_option3-desktop"
+                    value="150"
+                  />
+                  <label for="price-filter_option3-desktop"
+                    >de R$ 151 até 300</label
+                  >
+                </span>
+
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="price-filter_option4-desktop"
+                    value="300"
+                  />
+                  <label for="price-filter_option4-desktop"
+                    >de R$ 301 até 500</label
+                  >
+                </span>
+
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="price-filter_option5-desktop"
+                    value="500"
+                  />
+                  <label for="price-filter_option5-desktop"
+                    >a partir de R$ 501</label
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- FIN FILTER MENU DESKTOP -->
+          <section class="products" id="products"></section>
+        </div>
         <button class="btn_moreProducts" id="btn_more">carregar mais</button>
       </main>
-
-      <div class="sort-menu">
-        <div class="title">
-          <p>ordenar</p>
-          <img src="" alt="" />
-        </div>
-      </div>
 
       <!-- FILTER MENU MOBILE -->
       <div class="filter-menu" id="filter-menu">

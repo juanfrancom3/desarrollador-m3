@@ -6,8 +6,9 @@ export class ShoppingBag {
   renderInBag(product) {
     const container = document.getElementById("shopping-bag--container");
     container.style.visibility = "visible";
+    container.classList.remove("hidde");
 
-    //Eliminar aviso de bolsa sin productos
+    //            Eliminar aviso de bolsa sin productos
     if (document.getElementById("shopping-bag-empty")) {
       const empty = document.getElementById("shopping-bag-empty");
       container.removeChild(empty);
@@ -57,9 +58,6 @@ export class ShoppingBag {
     bag_box.appendChild(myProduct);
 
     this.products_in_bag.push(product);
-    // this.products_in_bag.forEach((product) => {
-    //   console.log(product);
-    // });
 
     const blue_burble = document.getElementById("items_in_bag");
     blue_burble.textContent = this.products_in_bag.length;
