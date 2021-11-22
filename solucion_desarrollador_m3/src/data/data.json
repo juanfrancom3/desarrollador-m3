@@ -8,7 +8,8 @@
       "price": 28.00,
       "cant":10,
       "title": "CAMISETA MESCLA",
-      "colors": ["cinza"]
+      "colors": ["cinza"],
+      "sizes": ["P","M","G","36","38"]
     },
     {
       "id": 2,
@@ -16,7 +17,9 @@
       "price": 398.00,
       "cant":10,
       "title": "SAIA EM COURO",
-      "colors": ["amarelo", "laranja"]
+      "colors": ["amarelo", "laranja"],
+      "sizes": ["M","G","36","38","44"]
+
 
     },
     {
@@ -25,7 +28,9 @@
       "price": 398.00,
       "cant":10,
       "title": "CARDIGAN TIGRE",
-      "colors": ["laranja"]
+      "colors": ["laranja"],
+      "sizes": ["P","M","G","36","38","42","44"]
+
 
     },
     {
@@ -34,7 +39,9 @@
       "price": 99.00,
       "cant":10,
       "title": "CARDIGAN OFF WHITE",
-      "colors": ["branco"]
+      "colors": ["branco"],
+      "sizes": ["P","M","G","GG","U","38"]
+
 
     },
     {
@@ -43,7 +50,9 @@
       "price": 129.00,
       "cant":10,
       "title": "BODY LEOPARDO",
-      "colors": ["amarelo", "laranja"]
+      "colors": ["amarelo", "laranja"],
+      "sizes": ["P","M"]
+
 
     },
     {
@@ -52,7 +61,9 @@
       "price": 398.00,
       "cant":10,
       "title": "CASACO PELOS",
-      "colors": ["rosado"]
+      "colors": ["rosado"],
+      "sizes": ["M","G","36","38"]
+
 
     },
     {
@@ -61,7 +72,9 @@
       "price": 120.00,
       "cant":10,
       "title": "CROPPED STRIPES",
-      "colors": ["amarelo", "azul", "laranja"]
+      "colors": ["amarelo", "azul", "laranja"],
+      "sizes": ["M","G","36","38","42"]
+
 
     },
     {
@@ -70,7 +83,9 @@
       "price": 398.00,
       "cant":2,
       "title": "CAMISA TRANSPARENTE",
-      "colors": ["preto", "transparente"]
+      "colors": ["preto", "transparente"],
+      "sizes": ["P","G","GG","36","38","40"]
+      
 
     },
     {
@@ -79,7 +94,9 @@
       "price": 99.00,
       "cant":0,
       "title": "POCHETE CLUTCH",
-      "colors": ["branco"]
+      "colors": ["branco"],
+      "sizes": ["P","M","G","36","42","44","46"]
+
 
     }
   ]
