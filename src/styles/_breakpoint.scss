@@ -122,6 +122,7 @@
       max-width: 645px;
       gap: 3rem;
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: max-content;
       .product {
         .product_info {
           margin-bottom: 1.5rem;
@@ -162,6 +163,11 @@
   footer {
     p {
       font-size: 1.2rem;
+    }
+  }
+  .parallax {
+    .alert_container {
+      width: 40%;
     }
   }
 }
