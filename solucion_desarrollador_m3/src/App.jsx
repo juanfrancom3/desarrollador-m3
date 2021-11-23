@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import BolsaCompra from './components/BolsaCompra'
+import FiltroRango from './components/FiltroRango'
 import FiltroValor from './components/FiltroValor'
 import ListaTarjetas from './components/ListaTarjetas'
 import Titulo from './components/Titulo'
@@ -12,6 +13,7 @@ function App () {
   const [compra, setCompra] = useState('')
   const [filtroColor, setFiltroColor] = useState([])
   const [filtroTalla, setFiltroTalla] = useState([])
+  const [filtroPrecio, setFiltroPrecio] = useState([])
   // const [a, setA] = useState({})
 
   const agregar = (id) => {
@@ -45,6 +47,18 @@ function App () {
     }
     // console.log(filtroColor)
   }
+  const handleChangeFiltroPrecio = (event) => {
+    const newValue = event.target.value
+    // console.log(newo)
+    if (filtroPrecio.includes(newValue)) {
+      const set = new Set(filtroPrecio)
+      set.delete(newValue)
+      const valueNew = [...set]
+      setFiltroPrecio([...valueNew])
+    } else {
+      setFiltroPrecio([...filtroPrecio, newValue])
+    }
+  }
   return (
     <div className='App'>
       <header className='App-header container'>
@@ -64,17 +78,11 @@ function App () {
             <FiltroValor elements={['azul', 'verde', 'branco', 'amarelo', 'cinza']} title='CORES' filtro={handleChangeFiltroColor} />
 
             <FiltroValor elements={['P', 'M', 'G', 'GG', 'U', '36', '38', '40', '42', '44', '46']} title='CORES' filtro={handleChangeFiltroTalla} />
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
-            <p>h</p>
+            <FiltroRango title='FAIXA DE PREÇO' elements={['0-50', '51-150', '151-300', '301-500', '01']} filtro={handleChangeFiltroPrecio} />
+
           </div>
           <div className='catalogo'>
-            <ListaTarjetas data={response.data} filtroColor={filtroColor} filtroTalla={filtroTalla} agregar={agregar} />
+            <ListaTarjetas data={response.data} filtroColor={filtroColor} filtroTalla={filtroTalla} filtroPrecio={filtroPrecio} agregar={agregar} />
           </div>
 
         </div>
