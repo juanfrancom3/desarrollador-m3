@@ -14,6 +14,10 @@ export default function ListaTarjetas ({ data, agregar, filtroColor, filtroTalla
   } else {
     dataFil = useFiltroValor({ data, key: 'colors', array: filtroColor })
   }
+  if (filtroTalla.length !== 0) {
+    dataFil = useFiltroValor({ data: dataFil, key: 'sizes', array: filtroTalla })
+  }
+  // console.log(dataFil)
   // const dataF = data.filter((ele) => ele.colors.includes(filtro))
   // console.log('dataF', dataF)
   // const dd = new Set(data)
