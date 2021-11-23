@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-
+import './filtroValor.css'
 export default function FiltroValor ({ elements, title, filtro }) {
   // console.log(filtroColor, filtroTalla)
   // const [colorF, setColorF] = useState('')
@@ -11,7 +11,7 @@ export default function FiltroValor ({ elements, title, filtro }) {
   //   console.log(colorF)
   // }
   return (
-    <>
+    <div className='filtro-valor'>
       <h4>{title}</h4>
       {
       elements.map((element) => {
@@ -23,6 +23,6 @@ export default function FiltroValor ({ elements, title, filtro }) {
         )
       })
     }
-    </>
+    </div>
   )
 }
