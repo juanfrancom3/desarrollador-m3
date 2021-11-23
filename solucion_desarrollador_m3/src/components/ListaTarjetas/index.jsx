@@ -1,10 +1,12 @@
+import useFiltroRango from '../../hooks/useFiltroRango'
 import useFiltroValor from '../../hooks/useFiltroValor'
 import Tarjeta from '../Tarjeta'
 import './listaTarjetas.css'
 
-export default function ListaTarjetas ({ data, agregar, filtroColor, filtroTalla }) {
+export default function ListaTarjetas ({ data, agregar, filtroColor, filtroTalla, filtroPrecio }) {
   console.log('filtro', filtroColor)
   console.log('filtro talla', filtroTalla)
+  console.log('filtro precio', filtroPrecio)
   const agregarCarro = (id) => {
     agregar(id)
   }
@@ -17,15 +19,10 @@ export default function ListaTarjetas ({ data, agregar, filtroColor, filtroTalla
   if (filtroTalla.length !== 0) {
     dataFil = useFiltroValor({ data: dataFil, key: 'sizes', array: filtroTalla })
   }
-  // console.log(dataFil)
-  // const dataF = data.filter((ele) => ele.colors.includes(filtro))
-  // console.log('dataF', dataF)
-  // const dd = new Set(data)
-  // dd.add(...dataF)
-  // const dataT = [...data, ...dataF]
-  // console.log(dataT)
-  // console.log(dataF)
-  // console.log(dataFil)
+  if (filtroPrecio.length !== 0) {
+    dataFil = useFiltroRango({ data: dataFil, key: 'price', array: filtroPrecio })
+  }
+
   return (
     <div className='tarjetas'>
       {dataFil.map((ele, i) => (
