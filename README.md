@@ -1,60 +1,14 @@
-# Ven a ser un desarrollador M3
+# e-commerce
 
-Hola somos M3, una agencia especializada en el campo de e-commerce. Trabajamos con despliegue, migración, evolución y optimización de tiendas de comercio electrónico. Nuestra casa matriz está en Brasil, Rio de Janeiro y contamos con oficinas comerciales en São Paulo, Buenos Aires y Bogotá.
+Este es un proyecto creado con ReactJS, Typescript, Redux Toolkit, HTML 5, Styled Components, react-icons, react-paginate y json-server.
 
+## Iniciar proyecto
+1. Clonar el repositorio en el directorio local deseado.
+2. Instalar el json-server con el comando ```npm install -g json-server```.
+3. Ejecutar el json-server con el comando ```json-server --watch data.json --port 3001```, esto permitirá simular el backend de la aplicación.
+4. Ejecutar el comando ```npm i``` para poder instalar todas las dependencias necesarias.
+5. Ejecutar el comando ```npm start``` para poner a correr la aplicación.
 
-Estamos buscando Desarrolladores(as) `Front-end`, con conocimienos sólidos en HTML, CSS y JS para diseñar interfaces y brindar la mejor experiencia a los clientes, buscando siempre la optimización del código y la agilidad en el desarrollo.
-
-## Qué estamos buscando:
-
-### Requisitos obligatorios:
-
-- Html5, css3;
-- Javascript, jquery;
-- Versionamiento Git;
-- Grunt/gulp;
-- Sass/less;
-- Sites responsivos;
-- Iniciativa, creatividad y colaboración;
-- Buenas práticas: reutilización de código, semántica, organización, performance.
-
-### Deseables:
-
-- Experiencia con algún CMS
-- Conocimiento/ experiencia en Vtex
-- React
-
-----
-
-## Cómo aplicar a la vacante
-
-- [Crea un fork de este proyecto;](https://github.com/agenciam3/Desenvolvedor-M3/fork)
-- En el fork, codifica el layout siguiendo las instrucciones que están abajo;
-- Actualiza el readme con las instrucciones necesarias para ejecutar tu código;
-- Adiciona también tu e-mail de contacto al readme del proyecto ( en caso que tu e-mail de github sea privado )
-- Haz un pull request (o envíalo a [juan@m3ecommerce.com](mailto:juan@m3ecommerce.com?subject=Vacante%20DEV%20-%20M3)
-
-
-**obs.**: link del proyecto [github.com/juanfrancom3/desarrollador-m3](https://github.com/juanfrancom3/desarrollador-m3)
-
-### Instrucciones para la prueba
-
-El layout se encontrá en la carpeta "layout" en PSD y PNG.
-
-### Obligatorio
-
-- HTML5 y CSS3
-- Interacción con JSON para renderizar los productos (siéntete libre de crear el JSON en el formato que encuentres más adecuado).
-- Interacción con JSON para filtrar los productos.
-- Funcionalidad: Filtrar productos por color, tamaño y precio.
-- Funcionalidad: Adicionar producto al carrito.
-- Funcionalidad: Agregar más productos.
-- No utilizar Bootstrap, Foundation Css, Semantic ui o semejantes ;
-- Responsivo
-
-#### Bonus
-
-- Javascript sin plugins y modular
-- Grunt, Gulp o similar
-
-##### Dudas: [juan@m3ecommerce.com](mailto:juan@m3ecommerce.com?subject=Consulta%20Vacante%20DEV%20-%20M3)
+## Mis correos
+oecordoba8@gmail.com
+ocordoba3@hotmail.com
