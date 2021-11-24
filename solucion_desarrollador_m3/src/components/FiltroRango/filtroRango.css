@@ -1,7 +1,7 @@
 
-/* .filtro-rango{
-  display: block;
-} */
+.filtro-rango{
+  text-align: left;
+}
 .filtro-rango label{
   display: block;
 }

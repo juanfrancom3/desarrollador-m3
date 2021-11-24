@@ -9,6 +9,9 @@ import Titulo from './components/Titulo'
 // import Tarjeta from './components/Tarjeta'
 // const a = import('./data/data.json')
 import * as response from './data/data.json'
+const FILTROS_COLOR = ['azul', 'verde', 'branco', 'amarelo', 'cinza', 'laranja', 'verde', 'vermelho', 'preto', 'Rosa', 'vinho']
+const FILTROS_TALLA = ['P', 'M', 'G', 'GG', 'U', '36', '38', '40', '42', '44', '46']
+const FILTROS_PRECIO = ['0-50', '51-150', '151-300', '301-500', '01']
 function App () {
   const [compra, setCompra] = useState('')
   const [filtroColor, setFiltroColor] = useState([])
@@ -75,10 +78,10 @@ function App () {
           </div>
           <p className='ordenar'>ordenar</p>
           <div className='filtros'>
-            <FiltroValor elements={['azul', 'verde', 'branco', 'amarelo', 'cinza']} title='CORES' filtro={handleChangeFiltroColor} />
+            <FiltroValor elements={FILTROS_COLOR} classN='list' title='CORES' filtro={handleChangeFiltroColor} />
 
-            <FiltroValor elements={['P', 'M', 'G', 'GG', 'U', '36', '38', '40', '42', '44', '46']} title='CORES' filtro={handleChangeFiltroTalla} />
-            <FiltroRango title='FAIXA DE PREÇO' elements={['0-50', '51-150', '151-300', '301-500', '01']} filtro={handleChangeFiltroPrecio} />
+            <FiltroValor elements={FILTROS_TALLA} classN='square' title='TAMANHOS' filtro={handleChangeFiltroTalla} />
+            <FiltroRango title='FAIXA DE PREÇO' classN='list' elements={FILTROS_PRECIO} filtro={handleChangeFiltroPrecio} />
 
           </div>
           <div className='catalogo'>

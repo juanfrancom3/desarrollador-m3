@@ -1,9 +1,10 @@
 import './filtroRango.css'
-export default function FiltroRango ({ title, elements, filtro }) {
+export default function FiltroRango ({ title, elements, filtro, classN }) {
   const elementsSplit = elements.map(element => element.split('-'))
   // console.log(elementsSplit)
+  const classA = `filtro-rango ${classN}`
   return (
-    <div className='filtro-rango'>
+    <div className={classA}>
       <h4>{title}</h4>
       {
         elementsSplit.map((element, index) => {
@@ -14,7 +15,10 @@ export default function FiltroRango ({ title, elements, filtro }) {
                   type='checkbox'
                   value={element}
                   onClick={filtro}
-                /> de R${element[0]} até R${element[1]}
+                />
+                <span className='label-text'>
+                  de R${element[0]} até R${element[1]}
+                </span>
               </label>
             )
           }
@@ -24,7 +28,10 @@ export default function FiltroRango ({ title, elements, filtro }) {
                 type='checkbox'
                 value={element}
                 onClick={filtro}
-              />a partir de R$ {element}
+              />
+              <span className='label-text'>
+                a partir de R$ {element}
+              </span>
             </label>
           )
         })

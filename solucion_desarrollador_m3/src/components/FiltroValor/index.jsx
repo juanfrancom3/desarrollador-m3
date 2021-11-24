@@ -1,28 +1,26 @@
 // import { useState } from 'react'
 import './filtroValor.css'
-export default function FiltroValor ({ elements, title, filtro }) {
-  // console.log(filtroColor, filtroTalla)
-  // const [colorF, setColorF] = useState('')
-
-  // const handleFiltro = (event) => {
-  //   // console.log('hola event')
-  //   // console.log(event.target.value)
-  //   setColorF(event.target.value)
-  //   console.log(colorF)
-  // }
+export default function FiltroValor ({ elements, title, filtro, classN = 'list' }) {
+  const classA = `filtro-valor ${classN}`
   return (
-    <div className='filtro-valor'>
+    <div className={classA}>
       <h4>{title}</h4>
-      {
-      elements.map((element) => {
-        return (
-          <label key={element}>
-            <input type='checkbox' onClick={filtro} value={element} />
-            {element}
-          </label>
-        )
-      })
-    }
+      <div>
+        {
+          elements.map((element) => {
+            return (
+              <label key={element}>
+                <input type='checkbox' onClick={filtro} value={element} />
+                <span className='label-text'>
+                  {element}
+                </span>
+
+              </label>
+            )
+          })
+        }
+      </div>
+
     </div>
   )
 }
