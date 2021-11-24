@@ -92,25 +92,6 @@ document.getElementById("close_sort-menu").addEventListener("click", () => {
   sendMenu(id, false);
 });
 
-//BTN Mas reciente
-document
-  .getElementById("btn_most-recent")
-  .addEventListener("click", async () => {});
-
-//BTN lower-price
-document
-  .getElementById("btn_lower-price")
-  .addEventListener("click", async () => {
-    // render();
-  });
-
-//BTN higher price
-document
-  .getElementById("btn_higher-price")
-  .addEventListener("click", async () => {
-    // render();
-  });
-
 //BTN para icono de la bolsa de compra
 const shopping_bag_icon = document.getElementById("shopping-bag-icon");
 
@@ -138,6 +119,7 @@ document.getElementById("moreColors").addEventListener("click", function () {
   if (colorsBox.classList.contains("big")) {
     colorsBox.style.transition = "all .5s ease-in-out";
     colorsBox.style.height = "160px";
+    btn.textContent = "Ver todas as cores";
     colorsBox.classList.remove("big");
   } else {
     colorsBox.style.height = "auto";
@@ -163,23 +145,11 @@ document
       "#filter_sizes input[type='checkbox']:checked"
     );
 
-    const filtered = await getFilterValues(
-      selectedColors,
-      selectedSizes,
-      selectedPrices
-    );
+    getFilterValues(selectedColors, selectedSizes, selectedPrices);
 
     const menu = document.getElementById("filter-menu");
     window.scrollTo(0, 0); // Subir la vista de la pagina a la parte superior
     fadeOut(menu); // OCULTAR Menu de filtro
-
-    isEmpty(filtered);
-
-    // ================ Elimar alerta
-    const alertCloser = document.getElementById("close_alert");
-    alertCloser.addEventListener("click", () => {
-      document.body.removeChild(parallax);
-    });
   });
 //   =====================================================   //
 //     FIN DE Programacion del formulario de filtro MOBILE   //
@@ -188,7 +158,6 @@ document
 //   ===============================================   //
 //    Programacion del formulario de filtro Desktop    //
 //   ===============================================   //
-
 //Funcion para capturar los checkbox y separarlos de acuerdo la tipo de dato (color, size, price)
 function filterInDesktop() {
   const checkboxCollection = document.querySelectorAll(
@@ -254,7 +223,7 @@ function eliminar(arreglo, elemento) {
   return nuevoArreglo;
 }
 
-async function getMyProducts(colors, prices, sizes) {
+export async function getMyProducts(colors, prices, sizes) {
   let allProducts = await getData();
   let filtered = [];
   //Condicionales para conocer el tipo de busqueda que se debe realizar de acuerdo a las opciones
@@ -311,7 +280,7 @@ async function getMyProducts(colors, prices, sizes) {
   }
 
   filtered = [...new Set(filtered)];
-
+  // console.log("Filtered: ", filtered);
   isEmpty(filtered);
 
   //Cerrar alerta en escritorio
@@ -383,10 +352,8 @@ function filterByPrice(product, selectedPrices, filtered) {
       if (parseInt(product.price) > 300 && parseInt(product.price) <= price) {
         filtered.push(product);
       }
-    } else {
-      if (parseInt(product.price) >= price) {
-        filtered.push(product);
-      }
+    } else if (parseInt(product.price) >= price) {
+      filtered.push(product);
     }
   });
   return filtered;
@@ -420,6 +387,7 @@ function showButtons() {
 // ============= Funcion para imprimir en pantalla la alerta de que no existen productos disponibles bajo
 // low parametros indicados en el menu de filtro.
 function isEmpty(filtered) {
+  console.log("Filtered en isEmpty", filtered);
   if (filtered.length == 0) {
     //CREAR ELEMENTO HTML DE LA ALERTA
     const alertContainer = document.createElement("div"); //CONTENEDOR
