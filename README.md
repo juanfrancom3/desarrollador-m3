@@ -1,6 +1,6 @@
 # e-commerce
 
-Este es un proyecto creado con ReactJS, Typescript, Redux Toolkit HTML 5, Styled Components, react-icons, react-paginate y json-server.
+Este es un proyecto creado con ReactJS, Typescript, Redux Toolkit, HTML 5, Styled Components, react-icons, react-paginate y json-server.
 
 ## Iniciar proyecto
 1. Clonar el repositorio en el directorio local deseado.
