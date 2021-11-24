@@ -1,0 +1,111 @@
+.filter-menu {
+  @include menu-box-mobile;
+  // left: 0;
+  &_header {
+    @include header;
+  }
+  details {
+    width: 100%;
+    padding: 3rem 2rem;
+    summary {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 300;
+      list-style: none;
+      p {
+        @include uppercase-title;
+        color: $black;
+      }
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    //COLORS FILTER
+    .colors-filter {
+      @include forms;
+    }
+  }
+  //FIN COLORS FILTER
+  //SIZE FILTER
+  .sizes-filter {
+    width: 100%;
+    max-width: 450px;
+    display: grid;
+    // padding: 1rem 2rem;
+    margin: 2.5rem auto 2rem;
+    grid-template-columns: repeat(auto-fill, 80px);
+    gap: 40px;
+    grid-auto-flow: dense;
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      position: relative;
+      font-size: 2.5rem;
+      max-width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      // border: 1px solid $options-color;
+      opacity: 0.4;
+      transition: all 0.2s ease-in-out;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: 1px solid $options-color;
+      }
+    }
+    [type="checkbox"]:checked + label {
+      opacity: 1;
+    }
+    [type="checkbox"]:checked + label::after {
+      border-color: $Primary-blue;
+    }
+  }
+  //FIN SIZE FILTER
+
+  .price-filter {
+    @include forms;
+    // padding: 3rem 2rem;
+  }
+  .buttons {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    display: none;
+    // display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    .button {
+      @include buttons;
+      width: 100%;
+      // max-width: 26rem;
+      height: 8rem;
+      font-size: 3rem;
+      font-weight: 300;
+      letter-spacing: 0.2rem;
+      background-color: transparent;
+      border: 1px solid $options-color;
+      color: $options-color;
+    }
+    .button_blue {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background-color: $Primary-blue;
+      color: $White;
+      border: none;
+    }
+  }
+}

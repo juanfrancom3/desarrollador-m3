@@ -1,0 +1,121 @@
+{
+  "results": [
+    {
+      "name": "camiseta mescla",
+      "price": "28,00",
+      "color": "gray",
+      "toFinance": "até 3x de R$9,33",
+      "image": {
+        "source": "./assets/images/img_2.png"
+      },
+      "sizes": ["p", "m", "gg"],
+      "publication": {
+        "date": "2020-11-21"
+      }
+    },
+    {
+      "name": "saia em couro",
+      "price": "398,00",
+      "color": "brown",
+      "toFinance": "até 5X de R$30,00",
+      "image": {
+        "source": "./assets/images/img_3.png"
+      },
+      "sizes": ["m", "gg"],
+      "publication": {
+        "date": "2021-11-21"
+      }
+    },
+    {
+      "name": "cardigan tigre",
+      "price": "398,00",
+      "color": "orange",
+      "toFinance": "até 5x de R$30,00",
+      "image": {
+        "source": "./assets/images/img_4.png"
+      },
+      "sizes": ["gg", "g"],
+      "publication": {
+        "date": "2020-08-21"
+      }
+    },
+    {
+      "name": "cardigan off white",
+      "price": "99,90",
+      "color": "white",
+      "toFinance": "até 3x de R$33,30",
+      "image": {
+        "source": "./assets/images/img_5.png"
+      },
+      "sizes": ["m", "g"],
+      "publication": {
+        "date": "2021-03-18"
+      }
+    },
+    {
+      "name": "body leopardo",
+      "price": "129,90",
+      "color": "brown",
+      "toFinance": "até 3x de R$43,43",
+      "image": {
+        "source": "./assets/images/img_6.png"
+      },
+      "sizes": ["p", "g"],
+      "publication": {
+        "date": "2020-12-23"
+      }
+    },
+    {
+      "name": "casaco pelos",
+      "price": "398,00",
+      "color": "pink",
+      "toFinance": "até 5x de R$30,00",
+      "image": {
+        "source": "./assets/images/img_7.png"
+      },
+      "sizes": ["p", "m", "g"],
+      "publication": {
+        "date": "2020-05-05"
+      }
+    },
+    {
+      "name": "cropped stripes",
+      "price": "120,00",
+      "color": "red",
+      "toFinance": "até 3x de R$40,00",
+      "image": {
+        "source": "./assets/images/img_8.png"
+      },
+      "sizes": ["p", "m"],
+      "publication": {
+        "date": "2021-02-02"
+      }
+    },
+    {
+      "name": "camisa transparente",
+      "price": "398,00",
+      "color": "black",
+      "toFinance": "até 5x de R$30,00",
+      "image": {
+        "source": "./assets/images/img_9.png"
+      },
+      "sizes": ["m", "gg"],
+      "publication": {
+        "date": "2020-10-27"
+      }
+    },
+    {
+      "name": "pochete clutch",
+      "price": "99,00",
+      "color": "white",
+      "toFinance": "até 3x de R$33,00",
+      "image": {
+        "source": "./assets/images/img_10.png"
+      },
+      "sizes": ["gg", "p"],
+      "publication": {
+        "date": "2020-09-11"
+      }
+    }
+  ]
+}

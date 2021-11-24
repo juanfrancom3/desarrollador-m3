@@ -1,0 +1,37 @@
+.header {
+  @include header;
+  .logo {
+    width: 183px;
+    height: 48px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .shopping-bag {
+    width: 4rem;
+    height: 4.4rem;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .items-in-bag {
+      visibility: hidden;
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 14px;
+      right: -23px;
+      background-color: $Primary-blue;
+      color: $White;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.1rem;
+      font-family: $Font;
+      font-weight: 500;
+    }
+  }
+}

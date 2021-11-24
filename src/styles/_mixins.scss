@@ -1,0 +1,108 @@
+@mixin buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  outline: none;
+  border: none;
+  font-size: $Font-size-product-text;
+}
+@mixin uppercase-title {
+  font-size: 3rem;
+  color: $options-color;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.5rem 0 2rem;
+  border-bottom: 1px solid $options-color;
+  p {
+    @include uppercase-title;
+  }
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@mixin menu-box-mobile {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  border-bottom: 1px solid $options-color;
+  top: 0;
+  left: -100%;
+  background-color: $White;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin forms {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  span {
+    display: flex;
+    position: relative;
+    margin: 2.5rem 0;
+    align-items: center;
+    font-size: 2.6rem;
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      position: relative;
+      text-transform: capitalize;
+      padding-left: 5rem;
+      &::before {
+        content: " ";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0.2rem;
+        border: 1px outset $options-color;
+        transition: all 0.1s ease-in-out;
+      }
+      &::after {
+        content: " ";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0.8rem;
+        left: 0.6rem;
+        background-color: $Primary-blue;
+        border: none;
+        border-radius: 0.2rem;
+        display: none;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    input[type="checkbox"]:checked + label::after {
+      display: block;
+    }
+  }
+}
+
+@mixin amount {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $title-color;
+  color: $White;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+@mixin menuFiltro {
+} ;
