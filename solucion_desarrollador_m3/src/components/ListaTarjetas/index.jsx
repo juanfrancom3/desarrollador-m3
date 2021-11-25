@@ -4,9 +4,6 @@ import Tarjeta from '../Tarjeta'
 import './listaTarjetas.css'
 
 export default function ListaTarjetas ({ data, agregar, filtroColor, filtroTalla, filtroPrecio }) {
-  console.log('filtro', filtroColor)
-  console.log('filtro talla', filtroTalla)
-  console.log('filtro precio', filtroPrecio)
   const agregarCarro = (id) => {
     agregar(id)
   }

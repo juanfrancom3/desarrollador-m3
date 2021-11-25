@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import BolsaCompra from './components/BolsaCompra'
+import BotonCargar from './components/BotonCargar'
 import DropFiltros from './components/DropFiltros'
 import DropItemsFiltros from './components/DropItemsFiltros'
 import FiltroRango from './components/FiltroRango'
@@ -107,7 +108,7 @@ function App () {
           </div>
           <div className='catalogo'>
             <ListaTarjetas data={response.data} filtroColor={filtroColor} filtroTalla={filtroTalla} filtroPrecio={filtroPrecio} agregar={agregar} />
-            <button>hola</button>
+            <BotonCargar />
           </div>
 
         </div>

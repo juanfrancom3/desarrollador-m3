@@ -5,7 +5,7 @@
   /* grid-template-columns: repeat(3,1fr); */
   grid-template-columns: repeat(auto-fit,minmax(195px,195px));
   gap: 3.6rem;
-  justify-content: start;
+  justify-content: space-between;
   
   
 

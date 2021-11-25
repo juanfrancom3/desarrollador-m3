@@ -1,0 +1,18 @@
+.boton-cargar{
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.boton-cargar button{
+  cursor: pointer;
+  border: none;
+  background-color: var(--colorBlue);
+  padding: 1rem 2rem;
+  color: var(--colorTextSecondary)
+}
+.boton-cargar button h4{
+  margin: 0;
+}
+.boton-cargar button:hover{
+  
+  background-color: var(--colorBlueHover);
+}

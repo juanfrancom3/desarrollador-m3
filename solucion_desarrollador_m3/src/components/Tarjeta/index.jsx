@@ -3,8 +3,8 @@ import './tarjeta.css'
 export default function Tarjeta ({ src, price, title, agregar, ...props }) {
   // console.log(props)
   // console.log(agregar)
-  const label = props.cant >= 1 ? 'comprar' : 'agotado'
-  const active = label === 'comprar'
+  const label = props.cant >= 1 ? 'COMPRAR' : 'AGOTADO'
+  const active = label === 'COMPRAR'
   return (
     <div className='tarjeta'>
       <img src={src} alt={title} />

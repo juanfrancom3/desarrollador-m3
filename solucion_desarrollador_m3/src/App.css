@@ -11,10 +11,12 @@
   --colorBtnPrimaryHover:rgb(32, 32, 32);
   --colorBtnPrimaryDisabled: rgb(53, 53, 53);
   --colorBlue: #2bbff2;
+  --colorBlueHover: #1bcff4;
   --contentWidth: 70%;
   --contentWidthMobile: 95%;
   --paddingFiltersMobile: 20px;
   --widthScreenMobile: 780px;
+  
 }
 .App-logo {
   /* height: 40vmin; */
@@ -66,6 +68,8 @@
 }
 .catalogo{
   order:4;
+  display: flex;
+  flex-direction: column;
   flex-basis: 70%;
 
 }
