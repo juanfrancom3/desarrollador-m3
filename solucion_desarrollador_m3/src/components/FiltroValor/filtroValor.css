@@ -53,15 +53,16 @@
 }
 .square .label-text{
   position: relative;
+  width: 20px;
   /* padding-left: 1.3rem; */
 }
 .square label input[type='checkbox'] + .label-text:before{
   content: '';
   position: absolute;
-  top: -6px;
-  left: -10px;
-  height: 2rem;
-  width: 2rem;
+  top: -9px;
+  left: -14px;
+  height: 2.5rem;
+  width: 2.5rem;
   border: 1px solid #d5d5d5;
 
 }
@@ -69,4 +70,9 @@
   content: '';
   border:1px solid var(--colorBlue);
 
+}
+@media (max-width: 780px){ 
+  .filtro-valor{
+    padding-left: var(--paddingFiltersMobile);
+  }
 }

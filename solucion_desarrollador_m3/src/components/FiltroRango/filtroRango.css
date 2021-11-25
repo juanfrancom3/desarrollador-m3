@@ -5,3 +5,9 @@
 .filtro-rango label{
   display: block;
 }
+
+@media (max-width: 780px){ 
+  .filtro-rango{
+    padding-left: var(--paddingFiltersMobile);
+  }
+}

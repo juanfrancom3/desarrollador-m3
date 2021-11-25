@@ -1,10 +1,12 @@
 // import { useState } from 'react'
+// import DropFiltros from '../DropFiltros'
 import './filtroValor.css'
 export default function FiltroValor ({ elements, title, filtro, classN = 'list' }) {
   const classA = `filtro-valor ${classN}`
   return (
+
     <div className={classA}>
-      <h4>{title}</h4>
+      <h4 className='mostrar-grande'>{title}</h4>
       <div>
         {
           elements.map((element) => {
@@ -22,5 +24,6 @@ export default function FiltroValor ({ elements, title, filtro, classN = 'list' 
       </div>
 
     </div>
+
   )
 }

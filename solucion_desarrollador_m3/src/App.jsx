@@ -2,6 +2,8 @@ import { useState } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import BolsaCompra from './components/BolsaCompra'
+import DropFiltros from './components/DropFiltros'
+import DropItemsFiltros from './components/DropItemsFiltros'
 import FiltroRango from './components/FiltroRango'
 import FiltroValor from './components/FiltroValor'
 import ListaTarjetas from './components/ListaTarjetas'
@@ -9,7 +11,7 @@ import Titulo from './components/Titulo'
 // import Tarjeta from './components/Tarjeta'
 // const a = import('./data/data.json')
 import * as response from './data/data.json'
-const FILTROS_COLOR = ['azul', 'verde', 'branco', 'amarelo', 'cinza', 'laranja', 'verde', 'vermelho', 'preto', 'Rosa', 'vinho']
+const FILTROS_COLOR = ['azul', 'verde', 'branco', 'amarelo', 'cinza', 'laranja', 'vermelho', 'preto', 'Rosa', 'vinho']
 const FILTROS_TALLA = ['P', 'M', 'G', 'GG', 'U', '36', '38', '40', '42', '44', '46']
 const FILTROS_PRECIO = ['0-50', '51-150', '151-300', '301-500', '01']
 function App () {
@@ -78,11 +80,25 @@ function App () {
           </div>
           <p className='ordenar'>ordenar</p>
           <div className='filtros'>
-            <FiltroValor elements={FILTROS_COLOR} classN='list' title='CORES' filtro={handleChangeFiltroColor} />
+            {/* <h3 className='filtro-responsive'>filtros boton</h3> */}
+            <div className='contener-fil'>
+              <DropFiltros title='Filtrar'>
+                <DropItemsFiltros title='CORES'>
+                  <FiltroValor elements={FILTROS_COLOR} classN='list' title='CORES' filtro={handleChangeFiltroColor} />
+                </DropItemsFiltros>
+                <DropItemsFiltros title='TAMANHOS'>
+                  <FiltroValor elements={FILTROS_TALLA} classN='square' title='TAMANHOS' filtro={handleChangeFiltroTalla} />
+                </DropItemsFiltros>
 
-            <FiltroValor elements={FILTROS_TALLA} classN='square' title='TAMANHOS' filtro={handleChangeFiltroTalla} />
-            <FiltroRango title='FAIXA DE PREÇO' classN='list' elements={FILTROS_PRECIO} filtro={handleChangeFiltroPrecio} />
+                <DropItemsFiltros title='FAIXA DE PREÇO'>
+                  <FiltroRango title='FAIXA DE PREÇO' classN='list' elements={FILTROS_PRECIO} filtro={handleChangeFiltroPrecio} />
+                </DropItemsFiltros>
+              </DropFiltros>
+            </div>
 
+            {/* <div className='filtros-div'>
+
+            </div> */}
           </div>
           <div className='catalogo'>
             <ListaTarjetas data={response.data} filtroColor={filtroColor} filtroTalla={filtroTalla} filtroPrecio={filtroPrecio} agregar={agregar} />

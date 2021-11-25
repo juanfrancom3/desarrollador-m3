@@ -1,11 +1,13 @@
+// import DropFiltros from '../DropFiltros'
 import './filtroRango.css'
 export default function FiltroRango ({ title, elements, filtro, classN }) {
   const elementsSplit = elements.map(element => element.split('-'))
   // console.log(elementsSplit)
   const classA = `filtro-rango ${classN}`
   return (
+
     <div className={classA}>
-      <h4>{title}</h4>
+      <h4 className='mostrar-grande'>{title}</h4>
       {
         elementsSplit.map((element, index) => {
           if (element.length === 2) {
@@ -37,5 +39,6 @@ export default function FiltroRango ({ title, elements, filtro, classN }) {
         })
       }
     </div>
+
   )
 }
