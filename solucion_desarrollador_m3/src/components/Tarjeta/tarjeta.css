@@ -1,3 +1,6 @@
-/* .tarjeta{
-  width: 400px;
-} */
+.tarjeta{
+ text-align: center;
+}
+.tarjeta img{
+  width: 100%;
+}

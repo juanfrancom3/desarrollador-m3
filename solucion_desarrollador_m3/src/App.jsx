@@ -78,11 +78,19 @@ function App () {
           <div className='titulo'>
             <Titulo>Blusas</Titulo>
           </div>
-          <p className='ordenar'>ordenar</p>
+          <div className='ordenar'>
+            <DropFiltros title='ORDENAR'>
+              <select name='' id=''>
+                <option>ordenar por</option>
+                <option>mundo</option>
+              </select>
+            </DropFiltros>
+          </div>
+          {/* <p className='ordenar'>ordenar</p> */}
           <div className='filtros'>
             {/* <h3 className='filtro-responsive'>filtros boton</h3> */}
             <div className='contener-fil'>
-              <DropFiltros title='Filtrar'>
+              <DropFiltros title='FILTRAR'>
                 <DropItemsFiltros title='CORES'>
                   <FiltroValor elements={FILTROS_COLOR} classN='list' title='CORES' filtro={handleChangeFiltroColor} />
                 </DropItemsFiltros>
@@ -96,17 +104,15 @@ function App () {
               </DropFiltros>
             </div>
 
-            {/* <div className='filtros-div'>
-
-            </div> */}
           </div>
           <div className='catalogo'>
             <ListaTarjetas data={response.data} filtroColor={filtroColor} filtroTalla={filtroTalla} filtroPrecio={filtroPrecio} agregar={agregar} />
+            <button>hola</button>
           </div>
 
         </div>
       </div>
-
+      <footer className='container footer'>Agencia M3 - Agencia de Performance Digital</footer>
     </div>
   )
 }

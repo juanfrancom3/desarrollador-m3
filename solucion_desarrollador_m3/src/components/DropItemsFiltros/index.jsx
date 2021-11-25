@@ -13,10 +13,10 @@ export default function DropItemsFiltros ({ title, children }) {
       </div>
       <div className='mostrar-peque'>
         <div style={hideWhenVisible}>
-          <h3 onClick={toggleVisibility}>{title} ➕</h3>
+          <h3 className='title-drop-open' onClick={toggleVisibility}>{title} <i>➕</i></h3>
         </div>
         <div style={showWhenVisible} className='dropdown-item'>
-          <h3 onClick={toggleVisibility}>{title} ➖</h3>
+          <h3 className='title-drop-open' onClick={toggleVisibility}>{title} <i>➖</i></h3>
           <div>
             {children}
           </div>

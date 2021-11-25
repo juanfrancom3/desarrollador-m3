@@ -1,6 +1,15 @@
 /* .ocultar-grande{
   display: none;
 } */
+.title-drop{
+  font-weight: 100;
+  text-align: center;
+}
+.title-drop-open{
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
 .mostrar-grande{
   display: block;
 
