@@ -5,12 +5,10 @@
 
 export default function useFiltroRango ({ data, key, array }) {
   const arraySplit = array.map(e => e.split(','))
-  console.log(arraySplit)
+
   const response = (element, array) => {
     const res = array.map(e => {
-      console.log(e.length)
       if (e.length > 1) {
-        console.log(element, e[0], e[1])
         if (+element >= +e[0] && +element <= +e[1]) {
           return true
         }

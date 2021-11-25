@@ -29,7 +29,7 @@ function App () {
   }
   const handleChangeFiltroColor = (event) => {
     const newValue = event.target.value
-    console.error(newValue)
+
     if (filtroColor.includes(newValue)) {
       const set = new Set(filtroColor)
       set.delete(newValue)
@@ -42,7 +42,6 @@ function App () {
 
   const handleChangeFiltroTalla = (event) => {
     const newValue = event.target.value
-    console.error(newValue)
     if (filtroTalla.includes(newValue)) {
       const set = new Set(filtroTalla)
       set.delete(newValue)
