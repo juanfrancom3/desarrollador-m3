@@ -1,0 +1,58 @@
+.containerDetails {
+   display: flex;
+   justify-content: center;
+   margin-top: 60px;
+   flex-wrap: wrap;
+
+   .detailsImage {
+      margin-right: 80px;
+      text-align: center;
+
+      img {
+         height: 500px;
+      }
+   }
+
+   .moreDetails {
+      text-align: left;
+
+
+      p {
+         width: 250px;
+         margin-bottom: 50px;
+      }
+
+      a {
+         display: block;
+         text-align: center;
+         font-weight: bolder;
+         text-decoration: none;
+         padding: 17px;
+         color: white;
+         background-color: black;
+      }
+   }
+}
+
+.related {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 20px;
+   margin-top: 100px;
+   flex-wrap: wrap;
+
+   .relatedItems {
+      padding-right: 40px;
+      transition: .3s ease-in-out;
+
+      img {
+         height: 200px;
+
+      }
+
+      &:hover {
+         transform: scale(1.1);
+      }
+   }
+}

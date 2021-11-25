@@ -1,0 +1,46 @@
+{
+  "name": "prueba-ecomerce",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "sass": "^1.43.4",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "headerSass": "sass --watch ./src/components/Headers/headers.scss ./src/styles/headers.css",
+    "mainSass": "sass --watch ./src/components/MainContent/mainContent.scss ./src/styles/mainContent.css",
+    "footerSass": "sass --watch ./src/components/Footer/footer.scss ./src/styles/footer.css",
+    "sidebarSass": "sass --watch ./src/components/SideBar/sidebar.scss ./src/styles/sidebar.css",
+    "detailSass": "sass --watch ./src/components/DetailsProduct/detailsProducts.scss ./src/styles/detailsProdct.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
