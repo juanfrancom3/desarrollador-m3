@@ -58,6 +58,7 @@
   width: 40%;
   display: flex;
   justify-content: flex-end ;
+  align-items: center;
   
 }
 .filtros{
