@@ -1,0 +1,114 @@
+.container2 {
+  margin-top: -680px;
+}
+.container2 .noShow {
+  grid-column: 2/4;
+  margin-top: 100px;
+}
+
+.form-main {
+  margin-left: -50px;
+  grid-column: 10/15;
+  margin-top: 15px;
+  width: 160px;
+}
+.form-main select {
+  text-align: left;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 17px;
+  outline: none;
+  background-color: white;
+  color: #464444;
+  font-weight: normal;
+}
+.form-main select .disapear {
+  display: none;
+  font-weight: 200;
+  font-size: 30px;
+}
+.form-main select option {
+  text-align: left;
+  padding: 15px;
+  margin: 15px;
+  height: 50px;
+}
+
+.product {
+  margin-bottom: 100px;
+  cursor: pointer;
+  margin-left: -40px;
+  transition: all 0.3s ease-in-out;
+}
+.product:hover {
+  transform: scale(1.1);
+}
+.product .linkToProduct {
+  background-color: white;
+}
+.product .linkToProduct img {
+  object-fit: cover;
+  background-position: center;
+}
+.product .title {
+  letter-spacing: 1px;
+}
+.product .price {
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  padding-bottom: 8px;
+}
+.product .promotion {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.product a {
+  display: block;
+  text-align: center;
+  width: 195px;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 17px;
+  color: white;
+  background-color: black;
+}
+
+.loadMore {
+  margin-top: 40px;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.loadMore a {
+  padding-top: 15px;
+  padding-left: 42.2px;
+  padding-right: 42.2px;
+  padding-bottom: 15px;
+  background-color: #2BBFF2;
+  color: white;
+  font-weight: bolder;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1115px) {
+  .container2 {
+    margin-top: 0px;
+  }
+
+  .product {
+    margin-left: -33px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+
+  .form-main {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mainContent.css.map */

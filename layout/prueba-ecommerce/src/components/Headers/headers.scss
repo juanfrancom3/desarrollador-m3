@@ -1,0 +1,196 @@
+@use '../../variablesSass/variables';
+
+header {
+  border-bottom: 2.7px solid variables.$opacity-color;
+  height: 60px;
+
+  nav {
+    .List {
+      list-style: none;
+
+      .logo-container {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin: auto;
+        width: 83%;
+
+
+        li {
+          .logolink {
+            color: black;
+
+            .cartLogo {
+              transition: all .4s ease-in-out;
+              margin-top: -10px;
+
+              &:hover {
+                transform: scale(1.3);
+              }
+            }
+
+          }
+        }
+
+        .counCart {
+          position: absolute;
+          top: 1.3rem;
+          right: -0.1rem;
+          width: 1.2rem;
+          height: 1.2rem;
+          font-size: 15px;
+          border: 1px solid variables.$main-color;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          padding: 0;
+          font-weight: 700;
+          background-color: variables.$main-color;
+          cursor: pointer;
+        }
+
+      }
+
+      .cart-header {
+        display: none;
+      }
+
+      img {
+        width: 120px;
+        padding: variables.$sm-margin;
+        height: 40px;
+        margin-top: -8px;
+      }
+
+      li {
+        font-size: variables.$bg-font;
+        padding: variables.$sm-margin;
+      }
+    }
+  }
+}
+
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  margin: 80px auto;
+  margin-top: 5px;
+  margin-bottom: 165px;
+
+  table {
+    width: 90vw;
+    border-collapse: collapse;
+    margin-bottom: 320px;
+
+    tfoot {
+      display: flex;
+      color: white;
+      height: 60px;
+
+      tr {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: variables.$main-color;
+
+        th {
+          font-size: variables.$md-font;
+          font-weight: bold;
+          margin-left: 100px;
+
+          button {
+            display: block;
+            width: 150px;
+            height: variables.$md-margin;
+            color: variables.$main-color;
+            font-size: variables.$small-size;
+            font-weight: bold;
+            outline: none;
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    thead {
+      display: flex;
+
+      tr {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: variables.$main-color;
+
+        th {
+          padding: 0 50px;
+          padding-bottom: 7px;
+          padding-top: variables.$sm-margin;
+          color: #fff;
+          background: variables.$main-color;
+          font-weight: normal;
+          font-size: variables.$small-size;
+        }
+      }
+    }
+
+
+
+    tbody {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      td {
+        padding: variables.$small-size;
+
+        .addMMore {
+          margin-left: -100px;
+          font-size: variables.$md-font;
+          text-align: center;
+        }
+
+        .cartItemImg {
+          width: 80px;
+          height: 80px;
+          margin-right: variables.$sm-margin;
+        }
+
+        .remove-item {
+          color: variables.$main-color;
+          font-size: 23px;
+          padding-left: variables.$small-size;
+          transition: all .4s ease-in-out;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+
+      .cartInfo {
+        display: flex;
+        flex-wrap: wrap;
+
+        .cartItemTitle {
+          font-size: variables.$small-size;
+        }
+
+        small {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 755px) {
+  .cartItemTitle {
+    display: none;
+  }
+
+}

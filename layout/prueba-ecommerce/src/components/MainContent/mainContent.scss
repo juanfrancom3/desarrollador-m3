@@ -1,0 +1,131 @@
+@use '../../variables/variables';
+
+.container2 {
+   margin-top: -680px;
+
+   .noShow {
+      grid-column: 2/4;
+      margin-top: 100px;
+   }
+}
+
+.form-main {
+   margin-left: -50px;
+   grid-column: 10/15;
+   margin-top: 15px;
+
+   width: 160px;
+
+   select {
+      text-align: left;
+      padding: variables.$sm-margin;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 17px;
+      outline: none;
+      background-color: white;
+      color: #464444;
+      font-weight: normal;
+
+      .disapear {
+         display: none;
+         font-weight: 200;
+         font-size: variables.$bg-font;
+      }
+
+      option {
+         text-align: left;
+         padding: 15px;
+         margin: 15px;
+         height: variables.$md-margin;
+      }
+   }
+}
+
+
+.product {
+   margin-bottom: 100px;
+   cursor: pointer;
+   margin-left: -40px;
+
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      transform: scale(1.1);
+   }
+
+   .linkToProduct {
+      background-color: white;
+
+      img {
+         object-fit: cover;
+         background-position: center;
+      }
+   }
+
+
+   .title {
+      letter-spacing: 1px;
+   }
+
+   .price {
+      font-size: variables.$smaller-size;
+      font-weight: bolder;
+      letter-spacing: .5px;
+      padding-bottom: 8px;
+   }
+
+   .promotion {
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+   }
+
+   a {
+      display: block;
+      text-align: center;
+      width: 195px;
+      font-weight: bolder;
+      text-decoration: none;
+      padding: 17px;
+      color: white;
+      background-color: black;
+   }
+}
+
+.loadMore {
+   margin-top: 40px;
+   grid-column: 1/-1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+
+   a {
+      padding-top: 15px;
+      padding-left: 42.2px;
+      padding-right: 42.2px;
+      padding-bottom: 15px;
+      background-color: variables.$main-color;
+      color: white;
+      font-weight: bolder;
+      font-size: 21px;
+      text-decoration: none;
+   }
+}
+
+@media screen and (max-width: 1115px) {
+
+   .container2 {
+      margin-top: 0px;
+   }
+
+   .product {
+      margin-left: -33px;
+      margin-bottom: variables.$sm-margin;
+      margin-top: 100px;
+   }
+
+   .form-main {
+      display: none;
+   }
+}

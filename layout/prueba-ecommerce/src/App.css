@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  margin: 20px 30px 0px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* .container > * {
+  padding: 20px;
+  border: 1px solid black;
+} */
+
+.sidebar {
+  display: flex;
+  width: 340px;
+  grid-column: 1/4;
+}
+
+.container2 {
+  grid-column: 4/13;
+}
+
+.container2 {
+  display: grid;
+  text-align: center;
+  grid-gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 230px);
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 420px;
+}
+
+.footer {
+  grid-column: 1/13;
+}
+
+@media screen and (max-width: 1200px){
+
+  .container2 {
+    grid-column: 1/-1;
+  }
+
+  .sidebar {
+    grid-column: 1/13;
+  }
+}
