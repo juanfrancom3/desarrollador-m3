@@ -1,0 +1,10 @@
+.bolsa{
+  margin: 0;
+}
+.carrito{
+  background-color: var(--colorBlue);
+  border-radius: 100%;
+  padding: 0 6px;
+  position: relative;
+  left: -10px;
+}

@@ -1,0 +1,103 @@
+{
+
+  "data":[
+
+    {
+      "id": 1,
+      "source": "./src/layout/imagens/img_2.png",
+      "price": "28.00",
+      "cant":10,
+      "title": "CAMISETA MESCLA",
+      "colors": ["cinza"],
+      "sizes": ["P","M","G","36","38"]
+    },
+    {
+      "id": 2,
+      "source": "./src/layout/imagens/img_3.png",
+      "price": "398.00",
+      "cant":10,
+      "title": "SAIA EM COURO",
+      "colors": ["amarelo", "laranja"],
+      "sizes": ["M","G","36","38","44"]
+
+
+    },
+    {
+      "id": 3,
+      "source": "./src/layout/imagens/img_4.png",
+      "price": "398.00",
+      "cant":10,
+      "title": "CARDIGAN TIGRE",
+      "colors": ["laranja"],
+      "sizes": ["P","M","G","36","38","42","44"]
+
+
+    },
+    {
+      "id": 4,
+      "source": "./src/layout/imagens/img_5.png",
+      "price": "99.00",
+      "cant":10,
+      "title": "CARDIGAN OFF WHITE",
+      "colors": ["branco"],
+      "sizes": ["P","M","G","GG","U","38"]
+
+
+    },
+    {
+      "id": 5,
+      "source": "./src/layout/imagens/img_6.png",
+      "price": "129.00",
+      "cant":10,
+      "title": "BODY LEOPARDO",
+      "colors": ["amarelo", "laranja"],
+      "sizes": ["P","M"]
+
+
+    },
+    {
+      "id": 6,
+      "source": "./src/layout/imagens/img_7.png",
+      "price": "398.00",
+      "cant":10,
+      "title": "CASACO PELOS",
+      "colors": ["rosado"],
+      "sizes": ["M","G","36","38"]
+
+
+    },
+    {
+      "id": 7,
+      "source": "./src/layout/imagens/img_8.png",
+      "price": "120.00",
+      "cant":10,
+      "title": "CROPPED STRIPES",
+      "colors": ["amarelo", "azul", "laranja"],
+      "sizes": ["M","G","36","38","42"]
+
+
+    },
+    {
+      "id": 8,
+      "source": "./src/layout/imagens/img_9.png",
+      "price": "398.00",
+      "cant":2,
+      "title": "CAMISA TRANSPARENTE",
+      "colors": ["preto", "transparente"],
+      "sizes": ["P","G","GG","36","38","40"]
+      
+
+    },
+    {
+      "id": 9,
+      "source": "./src/layout/imagens/img_10.png",
+      "price": "99.00",
+      "cant":0,
+      "title": "POCHETE CLUTCH",
+      "colors": ["branco"],
+      "sizes": ["P","M","G","36","42","44","46"]
+
+
+    }
+  ]
+}

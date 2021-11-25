@@ -1,0 +1,149 @@
+.App {
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem;
+}
+:root{
+  --colorText: black;
+  --colorTextSecondary: white;
+  --colorBtnPrimary: black;
+  --colorBtnPrimaryHover:rgb(32, 32, 32);
+  --colorBtnPrimaryDisabled: rgb(53, 53, 53);
+  --colorBlue: #2bbff2;
+  --colorBlueHover: #1bcff4;
+  --contentWidth: 70%;
+  --contentWidthMobile: 95%;
+  --paddingFiltersMobile: 20px;
+  --widthScreenMobile: 780px;
+  
+}
+.App-logo {
+  /* height: 40vmin; */
+  pointer-events: none;
+}
+.App-header {
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  /* margin: 0 auto; */
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.container{
+  width: var(--contentWidth);
+  margin: 0 auto;
+}
+.main{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.titulo{
+  order: 1;
+  flex-basis: 50%;
+}
+.ordenar{
+  order: 2;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end ;
+  align-items: center;
+  
+}
+.filtros{
+  order: 3;
+  flex-basis: 30%;
+  width: 40%;
+  
+}
+.catalogo{
+  order:4;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+
+}
+.body{
+  display: flex;
+}
+/* .filtros{
+  flex-basis: 20%;
+} */
+.filtro-responsive{
+  display: none;
+}
+.filtros-div{
+  display: block;
+}
+.footer{
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 780px){ 
+  .App{
+    padding:0.1rem;
+  }
+  .filtro-responsive{
+    display: block;
+  }
+  /* .filtros-div{
+    display: none;
+  } */
+  .container{
+    width: var(--contentWidthMobile);
+  }
+  .main{
+    /* display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .titulo{
+    order: 1;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .ordenar{
+    order: 3;
+    width: 50%;
+    border: 1px solid rgb(167, 167, 167);
+    margin: 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .filtros{
+    order: 2;
+    flex-basis: 50%;
+    width: 20%;
+    border: 1px solid rgb(167, 167, 167);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-weight: 100;
+    
+  }
+  .catalogo{
+    order:4;
+    flex-basis: 100%;
+   
+  }
+  /* .contener-fil{
+    position: absolute;
+    width: 100%;
+    top: 0;
+  } */
+}

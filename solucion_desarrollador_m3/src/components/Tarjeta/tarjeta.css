@@ -1,0 +1,9 @@
+.tarjeta{
+ text-align: center;
+}
+.tarjeta button h4{
+  margin: 0;
+}
+.tarjeta img{
+  width: 100%;
+}
