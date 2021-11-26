@@ -252,6 +252,9 @@ header .carrito img {
     height: 18px;
     border: 1px solid grey;
   }
+  footer{
+    clear: both;
+  }
 
   .cargar button {
         background-color: #4185eb;
@@ -265,4 +268,37 @@ header .carrito img {
         margin: 4px 2px;
         cursor: pointer;
 }
-  
+
+/* Pop-up */
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:  0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  width: 600px;
+}
+
+.popup .btn-cerrar{
+  font-size: 16px;
+  line-height:  16px;
+  display: block;
+  text-align: rigth;
+  color: #bbbbbb;
+}
+
+.popup .btn-cerrar:hover{
+  color:  #000;
+}
