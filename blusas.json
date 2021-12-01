@@ -3,81 +3,98 @@
     "id": "1",
     "imagen": "/layout/imagens/img_2.png",
     "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
+    "precio": 20100,
     "cuotas": "3x",
-    "color": "gris"
+    "ncuotas": "3",
+    "color": "gris",
+    "tamaño": "m"
 
   },
   {
     "id": "2",
     "imagen": "/layout/imagens/img_3.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
-    "cuotas": "3x",
-    "color": "gris"
+    "nombre": "FALDA DE CUERO",
+    "precio": 284900,
+    "cuotas": "5x",
+    "ncuotas": "3",
+    "color": "amarillo",
+    "tamaño": "m"
 
   },
   {
     "id": "3",
     "imagen": "/layout/imagens/img_4.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
-    "cuotas": "3x",
-    "color": "gris"
+    "nombre": "CHAQUETA TIGRE",
+    "precio": 284900,
+    "cuotas": "5x",
+    "ncuotas": "3",
+    "color": "naranja",
+    "tamaño": "m"
 
   },
   {
     "id": "4",
     "imagen": "/layout/imagens/img_5.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
+    "nombre": "CHAQUETA BLANCA",
+    "precio": 70900,
     "cuotas": "3x",
-    "color": "gris"
+    "ncuotas": "3",
+    "color": "blanco",
+    "tamaño": "m"
 
   },
   {
     "id": "5",
     "imagen": "/layout/imagens/img_6.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
+    "nombre": "BODY LEOPARDO",
+    "precio": 92900,
     "cuotas": "3x",
-    "color": "gris"
+    "ncuotas": "3",
+    "color": "amarillo",
+    "tamaño": "m"
 
   },
   {
     "id": "6",
     "imagen": "/layout/imagens/img_7.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
-    "cuotas": "3x",
-    "color": "gris"
+    "nombre": "ABRIGO DE PIEL",
+    "precio": 284900,
+    "cuotas": "5x",
+    "ncuotas": "5",
+    "color": "naranja",
+    "tamaño": "m"
 
   },
   {
     "id": "7",
     "imagen": "/layout/imagens/img_8.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
+    "nombre": "CROPPED STRIPES",
+    "precio": 84900,
     "cuotas": "3x",
-    "color": "gris"
+    "ncuotas": "3",
+    "color": "azul",
+    "tamaño": "m"
 
   },
   {
     "id": "8",
     "imagen": "/layout/imagens/img_9.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
-    "cuotas": "3x",
+    "nombre": "CAMISA TRANSPARENTE",
+    "precio": 284900,
+    "cuotas": "5x",
+    "ncuotas": "5",
     "color": "gris"
 
   },
   {
     "id": "9",
     "imagen": "/layout/imagens/img_10.png",
-    "nombre": "CAMISETA MEZCLA",
-    "precio": "20100",
+    "nombre": "POCHETE CLUTCH",
+    "precio": 70000,
     "cuotas": "3x",
-    "color": "gris"
+    "ncuotas": "3",
+    "color": "blanco",
+    "tamaño": "m"
 
   }  
 ]

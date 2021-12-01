@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
@@ -20,7 +21,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 header {
-    width: 100vw;
+    width: 100%;
     height: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -44,17 +45,18 @@ header .carrito img {
 
 .columnas{
     display: grid;
-    grid-template-columns: 500px 1px;
-    grid-template-rows: 500px 500px; 
+    grid-template-columns: 400px 100px;
+    grid-template-rows: 500px 500px 500px; 
 }
 
 .title{
     text-align: center;
     font-size: 40px;
     color: #6a6a6a;
-    margin-top: 100px;
-    font-weight: 100;
+    margin-top: 1px;
+    font-weight: 80;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 
@@ -116,6 +118,7 @@ header .carrito img {
 }
 .grid {
     display: grid;
+    text-align: center;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 500px 500px 500px;
 }
@@ -162,6 +165,11 @@ header .carrito img {
     width: 40px;
     text-align: center;
     opacity: 0.4;
+  }
+
+  .tamaño button:hover{
+    color: rgb(106, 72, 230);
+    background-color: rgb(207, 103, 29);
   }
 
   .color {
@@ -252,8 +260,10 @@ header .carrito img {
     height: 18px;
     border: 1px solid grey;
   }
-  footer{
-    clear: both;
+  .cargar{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
   }
 
   .cargar button {
@@ -267,11 +277,13 @@ header .carrito img {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
+        
 }
 
 /* Pop-up */
 
 .overlay {
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
@@ -280,6 +292,11 @@ header .carrito img {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
+}
+
+.overlay.active{
+  visibility: visible;
 }
 
 .popup{
@@ -302,3 +319,65 @@ header .carrito img {
 .popup .btn-cerrar:hover{
   color:  #000;
 }
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  background: #eee;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+  text-align: center;
+}
+table caption {
+  padding: 0.3em;
+  color: #fff;
+   background: #000;
+}
+table th {
+  background-color: #2185f8;
+}
+table .btn-info{
+  background-color: rgb(69, 30, 177);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table .btn-danger{
+  background-color: rgb(202, 20, 29);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer p{
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 50px;
+  border: none;
+  background: black;
+  color: white;
+  display: block;
+}
+
+

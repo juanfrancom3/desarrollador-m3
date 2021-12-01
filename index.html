@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
-	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>M3 e-commerce</title>
   </head>
   <body>
-    <div>
     <header>
       <img src="/layout/imagens/logo-m3.png" alt="M3 e-commerce" />
       <div class="carrito">
-        <a href="#"
-          ><img src="/layout/imagens/bolso.png" alt="Carrito de compras"
+        <a href="#" id="o-popup"
+          ><img
+            src="/layout/imagens/bolsa-de-la-compra.png"
+            alt="Carrito de compras"
         /></a>
       </div>
     </header>
@@ -23,9 +30,9 @@
       <div class="ordenar">
         <h1>Blusas</h1>
         <select name="" id="orden">
-          <option value="">Mas recientes</option>
-          <option value="">Mayor precio</option>
-          <option value="">Menor precio</option>
+          <option value="" id="reciente">Mas recientes</option>
+          <option value="" id="ma-precio">Mayor precio</option>
+          <option value="" id="me-precio">Menor precio</option>
           <br />
         </select>
       </div>
@@ -36,26 +43,26 @@
           <div class="color">
             <h4>COLORES</h4>
             <div class="marca">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="amarillo" id="amarillo" />
               <label for="">Amarillo</label>
             </div>
             <div class="marca">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="azul" />
               <label for="">Azul</label>
             </div>
             <div class="marca">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="blanco" />
               <label for="">Blanco</label>
             </div>
             <div class="marca">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="gris" />
               <label for="">Gris</label>
             </div>
             <div class="marca">
-              <input type="checkbox" name="" id="" />
+              <input type="checkbox" name="" id="naranja" />
               <label for="">Naranja</label>
             </div>
-            <a href="#">Ver todos los colores</a>
+            <a href="#" id="col-all">Ver todos los colores</a>
           </div>
           <div>
             <h3>TAMAÑOS</h3>
@@ -81,23 +88,23 @@
             <div class="precio">
               <h3>Precio</h3>
               <div class="marca-precio">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="pre1" />
                 <label for="">de $0 a $36.000</label>
               </div>
               <div class="marca-precio">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="pre2" />
                 <label for="">de $36.001 a $108.000</label>
               </div>
               <div class="marca-precio">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="pre3" />
                 <label for="">de $108.001 a $216.000</label>
               </div>
               <div class="marca-precio">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="pre4" />
                 <label for="">de $216.001 a $360.000</label>
               </div>
               <div class="marca-precio">
-                <input type="checkbox" name="" id="" />
+                <input type="checkbox" name="" id="pre5" />
                 <label for="">a partir de $1000</label>
               </div>
             </div>
@@ -113,7 +120,6 @@
               <img src="" alt="" class="card-img-top" />
               <h3 class="titulo">Nombre</h3>
               <h4>Precio</h4>
-              COP
               <p>Cuotas</p>
               <button class="btn-buy">COMPRAR</button>
             </div>
@@ -121,65 +127,68 @@
         </div>
       </template>
     </section>
-    <footer class="cargar">
-      <button type="button" class="carregar">CARGAR MAS</button>
+    <div class="cargar">
+      <button type="button" class="carregar">CARGAR MAS</button><br />
+    </div>
+    <footer>
+      <p>Agencia M3 - Agencia de Performance Digital</p>
     </footer>
 
     <div class="overlay" id="overlay">
       <div class="popup" id="popup">
-          <a href="#" id="btn-cerrar" class="btn-cerrar"><i class="fas fa-times"></i></a>
-          <section>
-            <div class="">
-              <h4>Carrito de compras</h4>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Item</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Acción</th>
-                    <th scope="col">Total</th>
-                  </tr>
-                </thead>
-                <tbody id="items"></tbody>
-                <tfoot>
-                  <tr id="footer">
-                    <th scope="row" colspan="5">
-                      Carrito vacío - comience a comprar!
-                    </th>
-                  </tr>
-                </tfoot>
-              </table>
-              <h4>Cards</h4>
-              <div class="row" id="cards"></div>
-            </div>
-      
-            <template id="template-footer">
-              <th scope="row" colspan="2">Total productos</th>
-              <td>10</td>
-              <td>
-                <button class="btn btn-danger btn-sm" id="vaciar-carrito">
-                  vaciar todo
-                </button>
-              </td>
-              <td class="font-weight-bold">$ <span>5000</span></td>
-            </template>
+        <a href="#" id="c-popup" class="c-popup"
+          ><i class="fas fa-times"></i
+        ></a>
+        <section>
+          <div class="">
+            <h4 class="title">Carrito de compras</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Item</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Acción</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="items"></tbody>
+              <tfoot>
+                <tr id="footer">
+                  <th scope="row" colspan="5">
+                    Carrito vacío - comienza a comprar!
+                  </th>
+                </tr>
+              </tfoot>
+            </table>
             <div class="row" id="cards"></div>
-            <template id="template-carrito">
-              <tr>
-                <th scope="row">id</th>
-                <td>Café</td>
-                <td>1</td>
-                <td>
-                  <button class="btn btn-info btn-sm">+</button>
-                  <button class="btn btn-danger btn-sm">-</button>
-                </td>
-                <td>$ <span>500</span></td>
-              </tr>
-            </template>
-          </section>
+          </div>
+
+          <template id="template-footer">
+            <th scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+              <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar
+              </button>
+            </td>
+            <td class="font-weight-bold">$ <span>5000</span></td>
+          </template>
+          <div class="row" id="cards"></div>
+          <template id="template-carrito">
+            <tr>
+              <th scope="row">id</th>
+              <td>Café</td>
+              <td>1</td>
+              <td>
+                <button class="btn btn-info btn-sm">+</button>
+                <button class="btn btn-danger btn-sm">-</button>
+              </td>
+              <td>$ <span>500</span></td>
+            </tr>
+          </template>
+        </section>
       </div>
-    </div>
     </div>
     <script src="app.js"></script>
   </body>
