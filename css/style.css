@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 10vw;
+    border-bottom: solid 2px grey;
+  }
+header img{
+    height: 45px;
+  }
+  
+header .carrito img {
+    height: 30px;
+}
+
+.columnas{
+    display: grid;
+    grid-template-columns: 400px 100px;
+    grid-template-rows: 500px 500px 500px; 
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 1px;
+    font-weight: 80;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    column-count: 3;
+}
+
+.container .card{
+    width: 330px;
+    height: 460px;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    padding: 30px;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 195px;
+    height: 293px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card button {
+  background-color: #000200;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.grid {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 500px 500px 500px;
+}
+
+.ordenar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+    height: 130px;
+    padding: 0px 10vw;
+    font-size: 30px;
+  }
+  .precio-tamaño-col{
+    padding: 0px 10vw;
+  }
+  
+  .ordenar #orden {
+    width: 130px;
+    height: 35px;
+    border: 1px solid grey;
+    font-size: 15px;
+  }
+  
+  .ordenar #orden:focus, .ordenar #orden:hover {
+    outline: none;
+    border: 1px solid;
+  }
+  
+
+  .tamaño button {
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #b7b7b7;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 0px;
+    width: 40px;
+    text-align: center;
+    opacity: 0.4;
+  }
+
+  .tamaño button:hover{
+    color: rgb(106, 72, 230);
+    background-color: rgb(207, 103, 29);
+  }
+
+  .color {
+    width: 25vw;
+  }
+  
+  .color {
+    margin-bottom: 10px;
+  }
+  
+  .color label {
+    margin-left: 8px;
+  }
+  
+  .color h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .color  .marca {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3px;
+  }
+  
+  .color  .marca input {
+    content: '';
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 1px;
+    border-radius: 0px;
+  }
+  
+  .color  .marca input:checked {
+    background: black;
+  }
+  
+  .color  .marca input:checked::after {
+    background: #00c3ff;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid grey;
+  }
+
+  .precio {
+    margin-top: 3px;
+    padding-top: 20px;
+  }
+  
+  .precio label {
+    margin-left: 8px;
+  }
+  
+  .precio h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .precio .marca-precio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3px;
+  }
+  
+  .precio .marca-precio input {
+    content: '';
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 1px;
+    border-radius: 0px;
+  }
+  
+  .precio .marca-precio input:checked {
+    background: black;
+  }
+  
+  .precio .marca-precio input:checked::after {
+    background: #00c3ff;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid grey;
+  }
+  .cargar{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .cargar button {
+        background-color: #4185eb;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        
+}
+
+/* Pop-up */
+
+.overlay {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right:  0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.overlay.active{
+  visibility: visible;
+}
+
+.popup{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  width: 600px;
+}
+
+.popup .btn-cerrar{
+  font-size: 16px;
+  line-height:  16px;
+  display: block;
+  text-align: rigth;
+  color: #bbbbbb;
+}
+
+.popup .btn-cerrar:hover{
+  color:  #000;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+table th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  background: #eee;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+  text-align: center;
+}
+table caption {
+  padding: 0.3em;
+  color: #fff;
+   background: #000;
+}
+table th {
+  background-color: #2185f8;
+}
+table .btn-info{
+  background-color: rgb(69, 30, 177);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+table .btn-danger{
+  background-color: rgb(202, 20, 29);
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer p{
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 50px;
+  border: none;
+  background: black;
+  color: white;
+  display: block;
+}
+
+
